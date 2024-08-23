@@ -1,0 +1,1057 @@
+gss_code,gss_name,date,type,annual_births
+TLC1,Tees Valley and Durham,1992-07-01,actual,16191
+TLC1,Tees Valley and Durham,1993-07-01,actual,15143
+TLC1,Tees Valley and Durham,1994-07-01,actual,14902
+TLC1,Tees Valley and Durham,1995-07-01,actual,14353
+TLC1,Tees Valley and Durham,1996-07-01,actual,13763
+TLC1,Tees Valley and Durham,1997-07-01,actual,13968
+TLC1,Tees Valley and Durham,1998-07-01,actual,13291
+TLC1,Tees Valley and Durham,1999-07-01,actual,13067
+TLC1,Tees Valley and Durham,2000-07-01,actual,12624
+TLC1,Tees Valley and Durham,2001-07-01,actual,12074
+TLC1,Tees Valley and Durham,2002-07-01,actual,11781
+TLC1,Tees Valley and Durham,2003-07-01,actual,12290
+TLC1,Tees Valley and Durham,2004-07-01,actual,12984
+TLC1,Tees Valley and Durham,2005-07-01,actual,13115
+TLC1,Tees Valley and Durham,2006-07-01,actual,13491
+TLC1,Tees Valley and Durham,2007-07-01,actual,13662
+TLC1,Tees Valley and Durham,2008-07-01,actual,14192
+TLC1,Tees Valley and Durham,2009-07-01,actual,13763
+TLC1,Tees Valley and Durham,2010-07-01,actual,14273
+TLC1,Tees Valley and Durham,2011-07-01,actual,14568
+TLC1,Tees Valley and Durham,2012-07-01,actual,14333
+TLC1,Tees Valley and Durham,2013-07-01,actual,14078
+TLC1,Tees Valley and Durham,2014-07-01,actual,13467
+TLC1,Tees Valley and Durham,2015-07-01,actual,13331
+TLC1,Tees Valley and Durham,2016-07-01,actual,13147
+TLC1,Tees Valley and Durham,2017-07-01,actual,12986
+TLC1,Tees Valley and Durham,2018-07-01,actual,12502
+TLC1,Tees Valley and Durham,2019-07-01,actual,12160
+TLC1,Tees Valley and Durham,2020-07-01,actual,11810
+TLC1,Tees Valley and Durham,2021-07-01,actual,11207
+TLC1,Tees Valley and Durham,2022-07-01,actual,11592
+TLC1,Tees Valley and Durham,2023-07-01,predicted,11493.8
+TLC2,"Northumberland, and Tyne and Wear",1992-07-01,actual,18668
+TLC2,"Northumberland, and Tyne and Wear",1993-07-01,actual,17757
+TLC2,"Northumberland, and Tyne and Wear",1994-07-01,actual,17204
+TLC2,"Northumberland, and Tyne and Wear",1995-07-01,actual,16862
+TLC2,"Northumberland, and Tyne and Wear",1996-07-01,actual,16044
+TLC2,"Northumberland, and Tyne and Wear",1997-07-01,actual,16378
+TLC2,"Northumberland, and Tyne and Wear",1998-07-01,actual,15589
+TLC2,"Northumberland, and Tyne and Wear",1999-07-01,actual,15069
+TLC2,"Northumberland, and Tyne and Wear",2000-07-01,actual,14571
+TLC2,"Northumberland, and Tyne and Wear",2001-07-01,actual,14122
+TLC2,"Northumberland, and Tyne and Wear",2002-07-01,actual,13987
+TLC2,"Northumberland, and Tyne and Wear",2003-07-01,actual,14367
+TLC2,"Northumberland, and Tyne and Wear",2004-07-01,actual,14617
+TLC2,"Northumberland, and Tyne and Wear",2005-07-01,actual,14711
+TLC2,"Northumberland, and Tyne and Wear",2006-07-01,actual,15431
+TLC2,"Northumberland, and Tyne and Wear",2007-07-01,actual,15422
+TLC2,"Northumberland, and Tyne and Wear",2008-07-01,actual,16177
+TLC2,"Northumberland, and Tyne and Wear",2009-07-01,actual,15866
+TLC2,"Northumberland, and Tyne and Wear",2010-07-01,actual,16030
+TLC2,"Northumberland, and Tyne and Wear",2011-07-01,actual,16210
+TLC2,"Northumberland, and Tyne and Wear",2012-07-01,actual,16105
+TLC2,"Northumberland, and Tyne and Wear",2013-07-01,actual,15568
+TLC2,"Northumberland, and Tyne and Wear",2014-07-01,actual,15414
+TLC2,"Northumberland, and Tyne and Wear",2015-07-01,actual,14992
+TLC2,"Northumberland, and Tyne and Wear",2016-07-01,actual,15435
+TLC2,"Northumberland, and Tyne and Wear",2017-07-01,actual,14878
+TLC2,"Northumberland, and Tyne and Wear",2018-07-01,actual,14602
+TLC2,"Northumberland, and Tyne and Wear",2019-07-01,actual,14283
+TLC2,"Northumberland, and Tyne and Wear",2020-07-01,actual,13451
+TLC2,"Northumberland, and Tyne and Wear",2021-07-01,actual,13498
+TLC2,"Northumberland, and Tyne and Wear",2022-07-01,actual,13605
+TLC2,"Northumberland, and Tyne and Wear",2023-07-01,predicted,13378.2
+TLD1,Cumbria,1992-07-01,actual,6229
+TLD1,Cumbria,1993-07-01,actual,5868
+TLD1,Cumbria,1994-07-01,actual,5839
+TLD1,Cumbria,1995-07-01,actual,5407
+TLD1,Cumbria,1996-07-01,actual,5254
+TLD1,Cumbria,1997-07-01,actual,5446
+TLD1,Cumbria,1998-07-01,actual,5183
+TLD1,Cumbria,1999-07-01,actual,5014
+TLD1,Cumbria,2000-07-01,actual,4840
+TLD1,Cumbria,2001-07-01,actual,4671
+TLD1,Cumbria,2002-07-01,actual,4480
+TLD1,Cumbria,2003-07-01,actual,4622
+TLD1,Cumbria,2004-07-01,actual,4879
+TLD1,Cumbria,2005-07-01,actual,4803
+TLD1,Cumbria,2006-07-01,actual,4889
+TLD1,Cumbria,2007-07-01,actual,4919
+TLD1,Cumbria,2008-07-01,actual,5153
+TLD1,Cumbria,2009-07-01,actual,5012
+TLD1,Cumbria,2010-07-01,actual,5095
+TLD1,Cumbria,2011-07-01,actual,5050
+TLD1,Cumbria,2012-07-01,actual,5002
+TLD1,Cumbria,2013-07-01,actual,4895
+TLD1,Cumbria,2014-07-01,actual,4809
+TLD1,Cumbria,2015-07-01,actual,4773
+TLD1,Cumbria,2016-07-01,actual,4806
+TLD1,Cumbria,2017-07-01,actual,4682
+TLD1,Cumbria,2018-07-01,actual,4351
+TLD1,Cumbria,2019-07-01,actual,4397
+TLD1,Cumbria,2020-07-01,actual,4144
+TLD1,Cumbria,2021-07-01,actual,4122
+TLD1,Cumbria,2022-07-01,actual,4120
+TLD1,Cumbria,2023-07-01,predicted,4029.6
+TLD3,Greater Manchester,1992-07-01,actual,38075
+TLD3,Greater Manchester,1993-07-01,actual,35850
+TLD3,Greater Manchester,1994-07-01,actual,35052
+TLD3,Greater Manchester,1995-07-01,actual,33770
+TLD3,Greater Manchester,1996-07-01,actual,32532
+TLD3,Greater Manchester,1997-07-01,actual,33681
+TLD3,Greater Manchester,1998-07-01,actual,32084
+TLD3,Greater Manchester,1999-07-01,actual,32041
+TLD3,Greater Manchester,2000-07-01,actual,30700
+TLD3,Greater Manchester,2001-07-01,actual,30086
+TLD3,Greater Manchester,2002-07-01,actual,30126
+TLD3,Greater Manchester,2003-07-01,actual,30620
+TLD3,Greater Manchester,2004-07-01,actual,32181
+TLD3,Greater Manchester,2005-07-01,actual,33254
+TLD3,Greater Manchester,2006-07-01,actual,34288
+TLD3,Greater Manchester,2007-07-01,actual,35013
+TLD3,Greater Manchester,2008-07-01,actual,36876
+TLD3,Greater Manchester,2009-07-01,actual,36641
+TLD3,Greater Manchester,2010-07-01,actual,37584
+TLD3,Greater Manchester,2011-07-01,actual,37979
+TLD3,Greater Manchester,2012-07-01,actual,37818
+TLD3,Greater Manchester,2013-07-01,actual,37116
+TLD3,Greater Manchester,2014-07-01,actual,36733
+TLD3,Greater Manchester,2015-07-01,actual,36516
+TLD3,Greater Manchester,2016-07-01,actual,37119
+TLD3,Greater Manchester,2017-07-01,actual,36311
+TLD3,Greater Manchester,2018-07-01,actual,35101
+TLD3,Greater Manchester,2019-07-01,actual,34688
+TLD3,Greater Manchester,2020-07-01,actual,33925
+TLD3,Greater Manchester,2021-07-01,actual,32661
+TLD3,Greater Manchester,2022-07-01,actual,33622
+TLD3,Greater Manchester,2023-07-01,predicted,32811
+TLD4,Lancashire,1992-07-01,actual,19341
+TLD4,Lancashire,1993-07-01,actual,18478
+TLD4,Lancashire,1994-07-01,actual,18100
+TLD4,Lancashire,1995-07-01,actual,17484
+TLD4,Lancashire,1996-07-01,actual,17012
+TLD4,Lancashire,1997-07-01,actual,17567
+TLD4,Lancashire,1998-07-01,actual,16786
+TLD4,Lancashire,1999-07-01,actual,16456
+TLD4,Lancashire,2000-07-01,actual,15934
+TLD4,Lancashire,2001-07-01,actual,15743
+TLD4,Lancashire,2002-07-01,actual,15259
+TLD4,Lancashire,2003-07-01,actual,15721
+TLD4,Lancashire,2004-07-01,actual,16422
+TLD4,Lancashire,2005-07-01,actual,17061
+TLD4,Lancashire,2006-07-01,actual,17180
+TLD4,Lancashire,2007-07-01,actual,17270
+TLD4,Lancashire,2008-07-01,actual,18044
+TLD4,Lancashire,2009-07-01,actual,17935
+TLD4,Lancashire,2010-07-01,actual,17684
+TLD4,Lancashire,2011-07-01,actual,17924
+TLD4,Lancashire,2012-07-01,actual,17815
+TLD4,Lancashire,2013-07-01,actual,17626
+TLD4,Lancashire,2014-07-01,actual,17127
+TLD4,Lancashire,2015-07-01,actual,17238
+TLD4,Lancashire,2016-07-01,actual,17116
+TLD4,Lancashire,2017-07-01,actual,16703
+TLD4,Lancashire,2018-07-01,actual,16003
+TLD4,Lancashire,2019-07-01,actual,16107
+TLD4,Lancashire,2020-07-01,actual,15501
+TLD4,Lancashire,2021-07-01,actual,14931
+TLD4,Lancashire,2022-07-01,actual,15408
+TLD4,Lancashire,2023-07-01,predicted,15010.5
+TLD6,Cheshire,1992-07-01,actual,11036
+TLD6,Cheshire,1993-07-01,actual,10487
+TLD6,Cheshire,1994-07-01,actual,10272
+TLD6,Cheshire,1995-07-01,actual,10117
+TLD6,Cheshire,1996-07-01,actual,9827
+TLD6,Cheshire,1997-07-01,actual,10198
+TLD6,Cheshire,1998-07-01,actual,9770
+TLD6,Cheshire,1999-07-01,actual,9757
+TLD6,Cheshire,2000-07-01,actual,9378
+TLD6,Cheshire,2001-07-01,actual,9088
+TLD6,Cheshire,2002-07-01,actual,8881
+TLD6,Cheshire,2003-07-01,actual,9093
+TLD6,Cheshire,2004-07-01,actual,9328
+TLD6,Cheshire,2005-07-01,actual,9619
+TLD6,Cheshire,2006-07-01,actual,9542
+TLD6,Cheshire,2007-07-01,actual,9795
+TLD6,Cheshire,2008-07-01,actual,10321
+TLD6,Cheshire,2009-07-01,actual,10076
+TLD6,Cheshire,2010-07-01,actual,10038
+TLD6,Cheshire,2011-07-01,actual,10375
+TLD6,Cheshire,2012-07-01,actual,10310
+TLD6,Cheshire,2013-07-01,actual,9878
+TLD6,Cheshire,2014-07-01,actual,9807
+TLD6,Cheshire,2015-07-01,actual,9602
+TLD6,Cheshire,2016-07-01,actual,9830
+TLD6,Cheshire,2017-07-01,actual,9482
+TLD6,Cheshire,2018-07-01,actual,9470
+TLD6,Cheshire,2019-07-01,actual,9009
+TLD6,Cheshire,2020-07-01,actual,9002
+TLD6,Cheshire,2021-07-01,actual,8722
+TLD6,Cheshire,2022-07-01,actual,9002
+TLD6,Cheshire,2023-07-01,predicted,8705.6
+TLD7,Merseyside,1992-07-01,actual,21638
+TLD7,Merseyside,1993-07-01,actual,20454
+TLD7,Merseyside,1994-07-01,actual,19761
+TLD7,Merseyside,1995-07-01,actual,19128
+TLD7,Merseyside,1996-07-01,actual,18374
+TLD7,Merseyside,1997-07-01,actual,18831
+TLD7,Merseyside,1998-07-01,actual,17438
+TLD7,Merseyside,1999-07-01,actual,17390
+TLD7,Merseyside,2000-07-01,actual,16548
+TLD7,Merseyside,2001-07-01,actual,16219
+TLD7,Merseyside,2002-07-01,actual,15774
+TLD7,Merseyside,2003-07-01,actual,16065
+TLD7,Merseyside,2004-07-01,actual,16609
+TLD7,Merseyside,2005-07-01,actual,16725
+TLD7,Merseyside,2006-07-01,actual,17140
+TLD7,Merseyside,2007-07-01,actual,17375
+TLD7,Merseyside,2008-07-01,actual,17816
+TLD7,Merseyside,2009-07-01,actual,17630
+TLD7,Merseyside,2010-07-01,actual,17688
+TLD7,Merseyside,2011-07-01,actual,18140
+TLD7,Merseyside,2012-07-01,actual,18317
+TLD7,Merseyside,2013-07-01,actual,17657
+TLD7,Merseyside,2014-07-01,actual,17637
+TLD7,Merseyside,2015-07-01,actual,17681
+TLD7,Merseyside,2016-07-01,actual,17753
+TLD7,Merseyside,2017-07-01,actual,17683
+TLD7,Merseyside,2018-07-01,actual,17254
+TLD7,Merseyside,2019-07-01,actual,16767
+TLD7,Merseyside,2020-07-01,actual,15906
+TLD7,Merseyside,2021-07-01,actual,15583
+TLD7,Merseyside,2022-07-01,actual,15965
+TLD7,Merseyside,2023-07-01,predicted,15342.3
+TLE1,East Yorkshire and Northern Lincolnshire,1992-07-01,actual,11871
+TLE1,East Yorkshire and Northern Lincolnshire,1993-07-01,actual,11189
+TLE1,East Yorkshire and Northern Lincolnshire,1994-07-01,actual,11187
+TLE1,East Yorkshire and Northern Lincolnshire,1995-07-01,actual,10675
+TLE1,East Yorkshire and Northern Lincolnshire,1996-07-01,actual,10287
+TLE1,East Yorkshire and Northern Lincolnshire,1997-07-01,actual,10554
+TLE1,East Yorkshire and Northern Lincolnshire,1998-07-01,actual,9870
+TLE1,East Yorkshire and Northern Lincolnshire,1999-07-01,actual,9684
+TLE1,East Yorkshire and Northern Lincolnshire,2000-07-01,actual,9156
+TLE1,East Yorkshire and Northern Lincolnshire,2001-07-01,actual,9059
+TLE1,East Yorkshire and Northern Lincolnshire,2002-07-01,actual,8856
+TLE1,East Yorkshire and Northern Lincolnshire,2003-07-01,actual,8969
+TLE1,East Yorkshire and Northern Lincolnshire,2004-07-01,actual,9567
+TLE1,East Yorkshire and Northern Lincolnshire,2005-07-01,actual,9846
+TLE1,East Yorkshire and Northern Lincolnshire,2006-07-01,actual,10089
+TLE1,East Yorkshire and Northern Lincolnshire,2007-07-01,actual,10303
+TLE1,East Yorkshire and Northern Lincolnshire,2008-07-01,actual,10742
+TLE1,East Yorkshire and Northern Lincolnshire,2009-07-01,actual,10498
+TLE1,East Yorkshire and Northern Lincolnshire,2010-07-01,actual,10630
+TLE1,East Yorkshire and Northern Lincolnshire,2011-07-01,actual,10766
+TLE1,East Yorkshire and Northern Lincolnshire,2012-07-01,actual,11082
+TLE1,East Yorkshire and Northern Lincolnshire,2013-07-01,actual,10557
+TLE1,East Yorkshire and Northern Lincolnshire,2014-07-01,actual,10321
+TLE1,East Yorkshire and Northern Lincolnshire,2015-07-01,actual,10232
+TLE1,East Yorkshire and Northern Lincolnshire,2016-07-01,actual,10150
+TLE1,East Yorkshire and Northern Lincolnshire,2017-07-01,actual,10016
+TLE1,East Yorkshire and Northern Lincolnshire,2018-07-01,actual,9655
+TLE1,East Yorkshire and Northern Lincolnshire,2019-07-01,actual,9154
+TLE1,East Yorkshire and Northern Lincolnshire,2020-07-01,actual,9087
+TLE1,East Yorkshire and Northern Lincolnshire,2021-07-01,actual,8689
+TLE1,East Yorkshire and Northern Lincolnshire,2022-07-01,actual,8865
+TLE1,East Yorkshire and Northern Lincolnshire,2023-07-01,predicted,8736
+TLE2,North Yorkshire,1992-07-01,actual,8631
+TLE2,North Yorkshire,1993-07-01,actual,8161
+TLE2,North Yorkshire,1994-07-01,actual,8340
+TLE2,North Yorkshire,1995-07-01,actual,8087
+TLE2,North Yorkshire,1996-07-01,actual,8193
+TLE2,North Yorkshire,1997-07-01,actual,8213
+TLE2,North Yorkshire,1998-07-01,actual,8015
+TLE2,North Yorkshire,1999-07-01,actual,7792
+TLE2,North Yorkshire,2000-07-01,actual,7594
+TLE2,North Yorkshire,2001-07-01,actual,7380
+TLE2,North Yorkshire,2002-07-01,actual,7142
+TLE2,North Yorkshire,2003-07-01,actual,7272
+TLE2,North Yorkshire,2004-07-01,actual,7530
+TLE2,North Yorkshire,2005-07-01,actual,7703
+TLE2,North Yorkshire,2006-07-01,actual,7658
+TLE2,North Yorkshire,2007-07-01,actual,7824
+TLE2,North Yorkshire,2008-07-01,actual,8133
+TLE2,North Yorkshire,2009-07-01,actual,8092
+TLE2,North Yorkshire,2010-07-01,actual,7954
+TLE2,North Yorkshire,2011-07-01,actual,8023
+TLE2,North Yorkshire,2012-07-01,actual,8143
+TLE2,North Yorkshire,2013-07-01,actual,7715
+TLE2,North Yorkshire,2014-07-01,actual,7739
+TLE2,North Yorkshire,2015-07-01,actual,7608
+TLE2,North Yorkshire,2016-07-01,actual,7724
+TLE2,North Yorkshire,2017-07-01,actual,7416
+TLE2,North Yorkshire,2018-07-01,actual,7235
+TLE2,North Yorkshire,2019-07-01,actual,6965
+TLE2,North Yorkshire,2020-07-01,actual,6607
+TLE2,North Yorkshire,2021-07-01,actual,6641
+TLE2,North Yorkshire,2022-07-01,actual,6682
+TLE2,North Yorkshire,2023-07-01,predicted,6648.8
+TLE3,South Yorkshire,1992-07-01,actual,17804
+TLE3,South Yorkshire,1993-07-01,actual,17250
+TLE3,South Yorkshire,1994-07-01,actual,16710
+TLE3,South Yorkshire,1995-07-01,actual,16183
+TLE3,South Yorkshire,1996-07-01,actual,15842
+TLE3,South Yorkshire,1997-07-01,actual,15722
+TLE3,South Yorkshire,1998-07-01,actual,15283
+TLE3,South Yorkshire,1999-07-01,actual,14916
+TLE3,South Yorkshire,2000-07-01,actual,14269
+TLE3,South Yorkshire,2001-07-01,actual,13964
+TLE3,South Yorkshire,2002-07-01,actual,13712
+TLE3,South Yorkshire,2003-07-01,actual,14053
+TLE3,South Yorkshire,2004-07-01,actual,14886
+TLE3,South Yorkshire,2005-07-01,actual,15072
+TLE3,South Yorkshire,2006-07-01,actual,15274
+TLE3,South Yorkshire,2007-07-01,actual,15870
+TLE3,South Yorkshire,2008-07-01,actual,16476
+TLE3,South Yorkshire,2009-07-01,actual,16426
+TLE3,South Yorkshire,2010-07-01,actual,16419
+TLE3,South Yorkshire,2011-07-01,actual,16671
+TLE3,South Yorkshire,2012-07-01,actual,16869
+TLE3,South Yorkshire,2013-07-01,actual,16486
+TLE3,South Yorkshire,2014-07-01,actual,16064
+TLE3,South Yorkshire,2015-07-01,actual,15953
+TLE3,South Yorkshire,2016-07-01,actual,16028
+TLE3,South Yorkshire,2017-07-01,actual,15888
+TLE3,South Yorkshire,2018-07-01,actual,15452
+TLE3,South Yorkshire,2019-07-01,actual,14926
+TLE3,South Yorkshire,2020-07-01,actual,14725
+TLE3,South Yorkshire,2021-07-01,actual,13984
+TLE3,South Yorkshire,2022-07-01,actual,14519
+TLE3,South Yorkshire,2023-07-01,predicted,14497.4
+TLE4,West Yorkshire,1992-07-01,actual,30325
+TLE4,West Yorkshire,1993-07-01,actual,28936
+TLE4,West Yorkshire,1994-07-01,actual,28731
+TLE4,West Yorkshire,1995-07-01,actual,27779
+TLE4,West Yorkshire,1996-07-01,actual,27539
+TLE4,West Yorkshire,1997-07-01,actual,27349
+TLE4,West Yorkshire,1998-07-01,actual,26803
+TLE4,West Yorkshire,1999-07-01,actual,26723
+TLE4,West Yorkshire,2000-07-01,actual,25851
+TLE4,West Yorkshire,2001-07-01,actual,25221
+TLE4,West Yorkshire,2002-07-01,actual,25699
+TLE4,West Yorkshire,2003-07-01,actual,26156
+TLE4,West Yorkshire,2004-07-01,actual,27325
+TLE4,West Yorkshire,2005-07-01,actual,27725
+TLE4,West Yorkshire,2006-07-01,actual,28733
+TLE4,West Yorkshire,2007-07-01,actual,29348
+TLE4,West Yorkshire,2008-07-01,actual,30569
+TLE4,West Yorkshire,2009-07-01,actual,30849
+TLE4,West Yorkshire,2010-07-01,actual,31566
+TLE4,West Yorkshire,2011-07-01,actual,31430
+TLE4,West Yorkshire,2012-07-01,actual,31289
+TLE4,West Yorkshire,2013-07-01,actual,30755
+TLE4,West Yorkshire,2014-07-01,actual,30246
+TLE4,West Yorkshire,2015-07-01,actual,30243
+TLE4,West Yorkshire,2016-07-01,actual,30128
+TLE4,West Yorkshire,2017-07-01,actual,29768
+TLE4,West Yorkshire,2018-07-01,actual,28705
+TLE4,West Yorkshire,2019-07-01,actual,27925
+TLE4,West Yorkshire,2020-07-01,actual,27169
+TLE4,West Yorkshire,2021-07-01,actual,25797
+TLE4,West Yorkshire,2022-07-01,actual,26122
+TLE4,West Yorkshire,2023-07-01,predicted,25542.1
+TLF1,Derbyshire and Nottinghamshire,1992-07-01,actual,26572
+TLF1,Derbyshire and Nottinghamshire,1993-07-01,actual,25268
+TLF1,Derbyshire and Nottinghamshire,1994-07-01,actual,25319
+TLF1,Derbyshire and Nottinghamshire,1995-07-01,actual,24263
+TLF1,Derbyshire and Nottinghamshire,1996-07-01,actual,23326
+TLF1,Derbyshire and Nottinghamshire,1997-07-01,actual,23958
+TLF1,Derbyshire and Nottinghamshire,1998-07-01,actual,22885
+TLF1,Derbyshire and Nottinghamshire,1999-07-01,actual,22935
+TLF1,Derbyshire and Nottinghamshire,2000-07-01,actual,21650
+TLF1,Derbyshire and Nottinghamshire,2001-07-01,actual,20924
+TLF1,Derbyshire and Nottinghamshire,2002-07-01,actual,20691
+TLF1,Derbyshire and Nottinghamshire,2003-07-01,actual,21205
+TLF1,Derbyshire and Nottinghamshire,2004-07-01,actual,21938
+TLF1,Derbyshire and Nottinghamshire,2005-07-01,actual,22390
+TLF1,Derbyshire and Nottinghamshire,2006-07-01,actual,23071
+TLF1,Derbyshire and Nottinghamshire,2007-07-01,actual,23720
+TLF1,Derbyshire and Nottinghamshire,2008-07-01,actual,24839
+TLF1,Derbyshire and Nottinghamshire,2009-07-01,actual,24615
+TLF1,Derbyshire and Nottinghamshire,2010-07-01,actual,25022
+TLF1,Derbyshire and Nottinghamshire,2011-07-01,actual,25604
+TLF1,Derbyshire and Nottinghamshire,2012-07-01,actual,25777
+TLF1,Derbyshire and Nottinghamshire,2013-07-01,actual,24940
+TLF1,Derbyshire and Nottinghamshire,2014-07-01,actual,24322
+TLF1,Derbyshire and Nottinghamshire,2015-07-01,actual,24191
+TLF1,Derbyshire and Nottinghamshire,2016-07-01,actual,24220
+TLF1,Derbyshire and Nottinghamshire,2017-07-01,actual,23906
+TLF1,Derbyshire and Nottinghamshire,2018-07-01,actual,22910
+TLF1,Derbyshire and Nottinghamshire,2019-07-01,actual,22403
+TLF1,Derbyshire and Nottinghamshire,2020-07-01,actual,21573
+TLF1,Derbyshire and Nottinghamshire,2021-07-01,actual,21084
+TLF1,Derbyshire and Nottinghamshire,2022-07-01,actual,21483
+TLF1,Derbyshire and Nottinghamshire,2023-07-01,predicted,20996.4
+TLF2,"Leicestershire, Rutland and Northamptonshire",1992-07-01,actual,20600
+TLF2,"Leicestershire, Rutland and Northamptonshire",1993-07-01,actual,19653
+TLF2,"Leicestershire, Rutland and Northamptonshire",1994-07-01,actual,19818
+TLF2,"Leicestershire, Rutland and Northamptonshire",1995-07-01,actual,19162
+TLF2,"Leicestershire, Rutland and Northamptonshire",1996-07-01,actual,18705
+TLF2,"Leicestershire, Rutland and Northamptonshire",1997-07-01,actual,18870
+TLF2,"Leicestershire, Rutland and Northamptonshire",1998-07-01,actual,18502
+TLF2,"Leicestershire, Rutland and Northamptonshire",1999-07-01,actual,18787
+TLF2,"Leicestershire, Rutland and Northamptonshire",2000-07-01,actual,18269
+TLF2,"Leicestershire, Rutland and Northamptonshire",2001-07-01,actual,18035
+TLF2,"Leicestershire, Rutland and Northamptonshire",2002-07-01,actual,17956
+TLF2,"Leicestershire, Rutland and Northamptonshire",2003-07-01,actual,18370
+TLF2,"Leicestershire, Rutland and Northamptonshire",2004-07-01,actual,19561
+TLF2,"Leicestershire, Rutland and Northamptonshire",2005-07-01,actual,19449
+TLF2,"Leicestershire, Rutland and Northamptonshire",2006-07-01,actual,20250
+TLF2,"Leicestershire, Rutland and Northamptonshire",2007-07-01,actual,20646
+TLF2,"Leicestershire, Rutland and Northamptonshire",2008-07-01,actual,21543
+TLF2,"Leicestershire, Rutland and Northamptonshire",2009-07-01,actual,21442
+TLF2,"Leicestershire, Rutland and Northamptonshire",2010-07-01,actual,21507
+TLF2,"Leicestershire, Rutland and Northamptonshire",2011-07-01,actual,22067
+TLF2,"Leicestershire, Rutland and Northamptonshire",2012-07-01,actual,22099
+TLF2,"Leicestershire, Rutland and Northamptonshire",2013-07-01,actual,21471
+TLF2,"Leicestershire, Rutland and Northamptonshire",2014-07-01,actual,20975
+TLF2,"Leicestershire, Rutland and Northamptonshire",2015-07-01,actual,21383
+TLF2,"Leicestershire, Rutland and Northamptonshire",2016-07-01,actual,21784
+TLF2,"Leicestershire, Rutland and Northamptonshire",2017-07-01,actual,21113
+TLF2,"Leicestershire, Rutland and Northamptonshire",2018-07-01,actual,20987
+TLF2,"Leicestershire, Rutland and Northamptonshire",2019-07-01,actual,20241
+TLF2,"Leicestershire, Rutland and Northamptonshire",2020-07-01,actual,19980
+TLF2,"Leicestershire, Rutland and Northamptonshire",2021-07-01,actual,19063
+TLF2,"Leicestershire, Rutland and Northamptonshire",2022-07-01,actual,19816
+TLF2,"Leicestershire, Rutland and Northamptonshire",2023-07-01,predicted,19470.9
+TLF3,Lincolnshire,1992-07-01,actual,7042
+TLF3,Lincolnshire,1993-07-01,actual,6911
+TLF3,Lincolnshire,1994-07-01,actual,7005
+TLF3,Lincolnshire,1995-07-01,actual,6791
+TLF3,Lincolnshire,1996-07-01,actual,6749
+TLF3,Lincolnshire,1997-07-01,actual,6686
+TLF3,Lincolnshire,1998-07-01,actual,6562
+TLF3,Lincolnshire,1999-07-01,actual,6563
+TLF3,Lincolnshire,2000-07-01,actual,6188
+TLF3,Lincolnshire,2001-07-01,actual,6175
+TLF3,Lincolnshire,2002-07-01,actual,5925
+TLF3,Lincolnshire,2003-07-01,actual,6108
+TLF3,Lincolnshire,2004-07-01,actual,6399
+TLF3,Lincolnshire,2005-07-01,actual,6448
+TLF3,Lincolnshire,2006-07-01,actual,6793
+TLF3,Lincolnshire,2007-07-01,actual,6987
+TLF3,Lincolnshire,2008-07-01,actual,7567
+TLF3,Lincolnshire,2009-07-01,actual,7448
+TLF3,Lincolnshire,2010-07-01,actual,7803
+TLF3,Lincolnshire,2011-07-01,actual,7958
+TLF3,Lincolnshire,2012-07-01,actual,7944
+TLF3,Lincolnshire,2013-07-01,actual,7679
+TLF3,Lincolnshire,2014-07-01,actual,7660
+TLF3,Lincolnshire,2015-07-01,actual,7711
+TLF3,Lincolnshire,2016-07-01,actual,7783
+TLF3,Lincolnshire,2017-07-01,actual,7387
+TLF3,Lincolnshire,2018-07-01,actual,7297
+TLF3,Lincolnshire,2019-07-01,actual,6909
+TLF3,Lincolnshire,2020-07-01,actual,6704
+TLF3,Lincolnshire,2021-07-01,actual,6479
+TLF3,Lincolnshire,2022-07-01,actual,6498
+TLF3,Lincolnshire,2023-07-01,predicted,6307.4
+TLG1,"Herefordshire, Worcestershire and Warwickshire",1992-07-01,actual,14600
+TLG1,"Herefordshire, Worcestershire and Warwickshire",1993-07-01,actual,13951
+TLG1,"Herefordshire, Worcestershire and Warwickshire",1994-07-01,actual,14005
+TLG1,"Herefordshire, Worcestershire and Warwickshire",1995-07-01,actual,13916
+TLG1,"Herefordshire, Worcestershire and Warwickshire",1996-07-01,actual,13540
+TLG1,"Herefordshire, Worcestershire and Warwickshire",1997-07-01,actual,13887
+TLG1,"Herefordshire, Worcestershire and Warwickshire",1998-07-01,actual,13734
+TLG1,"Herefordshire, Worcestershire and Warwickshire",1999-07-01,actual,13345
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2000-07-01,actual,12924
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2001-07-01,actual,12565
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2002-07-01,actual,12301
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2003-07-01,actual,12592
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2004-07-01,actual,13221
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2005-07-01,actual,13377
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2006-07-01,actual,13340
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2007-07-01,actual,13969
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2008-07-01,actual,14189
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2009-07-01,actual,14025
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2010-07-01,actual,14024
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2011-07-01,actual,14453
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2012-07-01,actual,14522
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2013-07-01,actual,14386
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2014-07-01,actual,13722
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2015-07-01,actual,13652
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2016-07-01,actual,13913
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2017-07-01,actual,13618
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2018-07-01,actual,13558
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2019-07-01,actual,13292
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2020-07-01,actual,12790
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2021-07-01,actual,12700
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2022-07-01,actual,12909
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2023-07-01,predicted,12816.5
+TLG2,Shropshire and Staffordshire,1992-07-01,actual,19073
+TLG2,Shropshire and Staffordshire,1993-07-01,actual,18187
+TLG2,Shropshire and Staffordshire,1994-07-01,actual,18019
+TLG2,Shropshire and Staffordshire,1995-07-01,actual,17186
+TLG2,Shropshire and Staffordshire,1996-07-01,actual,16970
+TLG2,Shropshire and Staffordshire,1997-07-01,actual,17702
+TLG2,Shropshire and Staffordshire,1998-07-01,actual,16839
+TLG2,Shropshire and Staffordshire,1999-07-01,actual,16402
+TLG2,Shropshire and Staffordshire,2000-07-01,actual,15901
+TLG2,Shropshire and Staffordshire,2001-07-01,actual,15393
+TLG2,Shropshire and Staffordshire,2002-07-01,actual,15140
+TLG2,Shropshire and Staffordshire,2003-07-01,actual,15581
+TLG2,Shropshire and Staffordshire,2004-07-01,actual,16332
+TLG2,Shropshire and Staffordshire,2005-07-01,actual,16682
+TLG2,Shropshire and Staffordshire,2006-07-01,actual,16626
+TLG2,Shropshire and Staffordshire,2007-07-01,actual,17194
+TLG2,Shropshire and Staffordshire,2008-07-01,actual,18093
+TLG2,Shropshire and Staffordshire,2009-07-01,actual,17648
+TLG2,Shropshire and Staffordshire,2010-07-01,actual,17724
+TLG2,Shropshire and Staffordshire,2011-07-01,actual,17912
+TLG2,Shropshire and Staffordshire,2012-07-01,actual,17904
+TLG2,Shropshire and Staffordshire,2013-07-01,actual,17589
+TLG2,Shropshire and Staffordshire,2014-07-01,actual,17250
+TLG2,Shropshire and Staffordshire,2015-07-01,actual,16828
+TLG2,Shropshire and Staffordshire,2016-07-01,actual,17080
+TLG2,Shropshire and Staffordshire,2017-07-01,actual,16988
+TLG2,Shropshire and Staffordshire,2018-07-01,actual,16479
+TLG2,Shropshire and Staffordshire,2019-07-01,actual,16049
+TLG2,Shropshire and Staffordshire,2020-07-01,actual,16009
+TLG2,Shropshire and Staffordshire,2021-07-01,actual,15666
+TLG2,Shropshire and Staffordshire,2022-07-01,actual,15876
+TLG2,Shropshire and Staffordshire,2023-07-01,predicted,15651.3
+TLG3,West Midlands,1992-07-01,actual,40194
+TLG3,West Midlands,1993-07-01,actual,38018
+TLG3,West Midlands,1994-07-01,actual,37819
+TLG3,West Midlands,1995-07-01,actual,36110
+TLG3,West Midlands,1996-07-01,actual,35885
+TLG3,West Midlands,1997-07-01,actual,36336
+TLG3,West Midlands,1998-07-01,actual,35018
+TLG3,West Midlands,1999-07-01,actual,34658
+TLG3,West Midlands,2000-07-01,actual,33575
+TLG3,West Midlands,2001-07-01,actual,33022
+TLG3,West Midlands,2002-07-01,actual,33232
+TLG3,West Midlands,2003-07-01,actual,34114
+TLG3,West Midlands,2004-07-01,actual,35325
+TLG3,West Midlands,2005-07-01,actual,35872
+TLG3,West Midlands,2006-07-01,actual,36552
+TLG3,West Midlands,2007-07-01,actual,37494
+TLG3,West Midlands,2008-07-01,actual,39434
+TLG3,West Midlands,2009-07-01,actual,39379
+TLG3,West Midlands,2010-07-01,actual,39435
+TLG3,West Midlands,2011-07-01,actual,40720
+TLG3,West Midlands,2012-07-01,actual,41093
+TLG3,West Midlands,2013-07-01,actual,40459
+TLG3,West Midlands,2014-07-01,actual,39800
+TLG3,West Midlands,2015-07-01,actual,39240
+TLG3,West Midlands,2016-07-01,actual,39827
+TLG3,West Midlands,2017-07-01,actual,39469
+TLG3,West Midlands,2018-07-01,actual,38346
+TLG3,West Midlands,2019-07-01,actual,37166
+TLG3,West Midlands,2020-07-01,actual,36155
+TLG3,West Midlands,2021-07-01,actual,34685
+TLG3,West Midlands,2022-07-01,actual,35328
+TLG3,West Midlands,2023-07-01,predicted,35574.8
+TLH1,East Anglia,1992-07-01,actual,26278
+TLH1,East Anglia,1993-07-01,actual,25591
+TLH1,East Anglia,1994-07-01,actual,25837
+TLH1,East Anglia,1995-07-01,actual,25036
+TLH1,East Anglia,1996-07-01,actual,24230
+TLH1,East Anglia,1997-07-01,actual,25433
+TLH1,East Anglia,1998-07-01,actual,24258
+TLH1,East Anglia,1999-07-01,actual,24040
+TLH1,East Anglia,2000-07-01,actual,23303
+TLH1,East Anglia,2001-07-01,actual,22630
+TLH1,East Anglia,2002-07-01,actual,22143
+TLH1,East Anglia,2003-07-01,actual,22969
+TLH1,East Anglia,2004-07-01,actual,24252
+TLH1,East Anglia,2005-07-01,actual,24449
+TLH1,East Anglia,2006-07-01,actual,24893
+TLH1,East Anglia,2007-07-01,actual,26005
+TLH1,East Anglia,2008-07-01,actual,27205
+TLH1,East Anglia,2009-07-01,actual,27340
+TLH1,East Anglia,2010-07-01,actual,27656
+TLH1,East Anglia,2011-07-01,actual,28171
+TLH1,East Anglia,2012-07-01,actual,28879
+TLH1,East Anglia,2013-07-01,actual,28186
+TLH1,East Anglia,2014-07-01,actual,27474
+TLH1,East Anglia,2015-07-01,actual,27407
+TLH1,East Anglia,2016-07-01,actual,27902
+TLH1,East Anglia,2017-07-01,actual,26547
+TLH1,East Anglia,2018-07-01,actual,26042
+TLH1,East Anglia,2019-07-01,actual,24918
+TLH1,East Anglia,2020-07-01,actual,24413
+TLH1,East Anglia,2021-07-01,actual,23453
+TLH1,East Anglia,2022-07-01,actual,24142
+TLH1,East Anglia,2023-07-01,predicted,23342.5
+TLH2,Bedfordshire and Hertfordshire,1992-07-01,actual,21750
+TLH2,Bedfordshire and Hertfordshire,1993-07-01,actual,21566
+TLH2,Bedfordshire and Hertfordshire,1994-07-01,actual,21881
+TLH2,Bedfordshire and Hertfordshire,1995-07-01,actual,20958
+TLH2,Bedfordshire and Hertfordshire,1996-07-01,actual,20691
+TLH2,Bedfordshire and Hertfordshire,1997-07-01,actual,20916
+TLH2,Bedfordshire and Hertfordshire,1998-07-01,actual,20831
+TLH2,Bedfordshire and Hertfordshire,1999-07-01,actual,20599
+TLH2,Bedfordshire and Hertfordshire,2000-07-01,actual,20328
+TLH2,Bedfordshire and Hertfordshire,2001-07-01,actual,20257
+TLH2,Bedfordshire and Hertfordshire,2002-07-01,actual,19837
+TLH2,Bedfordshire and Hertfordshire,2003-07-01,actual,20129
+TLH2,Bedfordshire and Hertfordshire,2004-07-01,actual,20685
+TLH2,Bedfordshire and Hertfordshire,2005-07-01,actual,20783
+TLH2,Bedfordshire and Hertfordshire,2006-07-01,actual,21584
+TLH2,Bedfordshire and Hertfordshire,2007-07-01,actual,21927
+TLH2,Bedfordshire and Hertfordshire,2008-07-01,actual,23371
+TLH2,Bedfordshire and Hertfordshire,2009-07-01,actual,23032
+TLH2,Bedfordshire and Hertfordshire,2010-07-01,actual,23300
+TLH2,Bedfordshire and Hertfordshire,2011-07-01,actual,24111
+TLH2,Bedfordshire and Hertfordshire,2012-07-01,actual,24004
+TLH2,Bedfordshire and Hertfordshire,2013-07-01,actual,23340
+TLH2,Bedfordshire and Hertfordshire,2014-07-01,actual,23493
+TLH2,Bedfordshire and Hertfordshire,2015-07-01,actual,23351
+TLH2,Bedfordshire and Hertfordshire,2016-07-01,actual,23875
+TLH2,Bedfordshire and Hertfordshire,2017-07-01,actual,23406
+TLH2,Bedfordshire and Hertfordshire,2018-07-01,actual,22900
+TLH2,Bedfordshire and Hertfordshire,2019-07-01,actual,22405
+TLH2,Bedfordshire and Hertfordshire,2020-07-01,actual,22159
+TLH2,Bedfordshire and Hertfordshire,2021-07-01,actual,21622
+TLH2,Bedfordshire and Hertfordshire,2022-07-01,actual,21988
+TLH2,Bedfordshire and Hertfordshire,2023-07-01,predicted,21432.7
+TLH3,Essex,1992-07-01,actual,20611
+TLH3,Essex,1993-07-01,actual,20119
+TLH3,Essex,1994-07-01,actual,20266
+TLH3,Essex,1995-07-01,actual,19317
+TLH3,Essex,1996-07-01,actual,19031
+TLH3,Essex,1997-07-01,actual,19405
+TLH3,Essex,1998-07-01,actual,19109
+TLH3,Essex,1999-07-01,actual,18869
+TLH3,Essex,2000-07-01,actual,18313
+TLH3,Essex,2001-07-01,actual,17877
+TLH3,Essex,2002-07-01,actual,17588
+TLH3,Essex,2003-07-01,actual,18087
+TLH3,Essex,2004-07-01,actual,18874
+TLH3,Essex,2005-07-01,actual,18848
+TLH3,Essex,2006-07-01,actual,19333
+TLH3,Essex,2007-07-01,actual,19777
+TLH3,Essex,2008-07-01,actual,20892
+TLH3,Essex,2009-07-01,actual,20688
+TLH3,Essex,2010-07-01,actual,20949
+TLH3,Essex,2011-07-01,actual,21079
+TLH3,Essex,2012-07-01,actual,21326
+TLH3,Essex,2013-07-01,actual,21083
+TLH3,Essex,2014-07-01,actual,20820
+TLH3,Essex,2015-07-01,actual,20999
+TLH3,Essex,2016-07-01,actual,21329
+TLH3,Essex,2017-07-01,actual,21055
+TLH3,Essex,2018-07-01,actual,21128
+TLH3,Essex,2019-07-01,actual,20498
+TLH3,Essex,2020-07-01,actual,20141
+TLH3,Essex,2021-07-01,actual,19312
+TLH3,Essex,2022-07-01,actual,20242
+TLH3,Essex,2023-07-01,predicted,19477.7
+TLI3,Inner London - West,1992-07-01,actual,13238
+TLI3,Inner London - West,1993-07-01,actual,12816
+TLI3,Inner London - West,1994-07-01,actual,13211
+TLI3,Inner London - West,1995-07-01,actual,13107
+TLI3,Inner London - West,1996-07-01,actual,13312
+TLI3,Inner London - West,1997-07-01,actual,13539
+TLI3,Inner London - West,1998-07-01,actual,13309
+TLI3,Inner London - West,1999-07-01,actual,13615
+TLI3,Inner London - West,2000-07-01,actual,13786
+TLI3,Inner London - West,2001-07-01,actual,14027
+TLI3,Inner London - West,2002-07-01,actual,13994
+TLI3,Inner London - West,2003-07-01,actual,14702
+TLI3,Inner London - West,2004-07-01,actual,15101
+TLI3,Inner London - West,2005-07-01,actual,15065
+TLI3,Inner London - West,2006-07-01,actual,15681
+TLI3,Inner London - West,2007-07-01,actual,16165
+TLI3,Inner London - West,2008-07-01,actual,15980
+TLI3,Inner London - West,2009-07-01,actual,16315
+TLI3,Inner London - West,2010-07-01,actual,16679
+TLI3,Inner London - West,2011-07-01,actual,16769
+TLI3,Inner London - West,2012-07-01,actual,16407
+TLI3,Inner London - West,2013-07-01,actual,15541
+TLI3,Inner London - West,2014-07-01,actual,14841
+TLI3,Inner London - West,2015-07-01,actual,14734
+TLI3,Inner London - West,2016-07-01,actual,14608
+TLI3,Inner London - West,2017-07-01,actual,14314
+TLI3,Inner London - West,2018-07-01,actual,13714
+TLI3,Inner London - West,2019-07-01,actual,13578
+TLI3,Inner London - West,2020-07-01,actual,12571
+TLI3,Inner London - West,2021-07-01,actual,12128
+TLI3,Inner London - West,2022-07-01,actual,11757
+TLI3,Inner London - West,2023-07-01,predicted,11406.2
+TLI4,Inner London - East,1992-07-01,actual,30310
+TLI4,Inner London - East,1993-07-01,actual,29807
+TLI4,Inner London - East,1994-07-01,actual,29839
+TLI4,Inner London - East,1995-07-01,actual,29838
+TLI4,Inner London - East,1996-07-01,actual,30063
+TLI4,Inner London - East,1997-07-01,actual,31045
+TLI4,Inner London - East,1998-07-01,actual,30381
+TLI4,Inner London - East,1999-07-01,actual,30740
+TLI4,Inner London - East,2000-07-01,actual,31116
+TLI4,Inner London - East,2001-07-01,actual,30916
+TLI4,Inner London - East,2002-07-01,actual,31309
+TLI4,Inner London - East,2003-07-01,actual,32194
+TLI4,Inner London - East,2004-07-01,actual,33271
+TLI4,Inner London - East,2005-07-01,actual,33704
+TLI4,Inner London - East,2006-07-01,actual,34861
+TLI4,Inner London - East,2007-07-01,actual,35750
+TLI4,Inner London - East,2008-07-01,actual,36692
+TLI4,Inner London - East,2009-07-01,actual,36270
+TLI4,Inner London - East,2010-07-01,actual,37344
+TLI4,Inner London - East,2011-07-01,actual,37749
+TLI4,Inner London - East,2012-07-01,actual,37558
+TLI4,Inner London - East,2013-07-01,actual,37171
+TLI4,Inner London - East,2014-07-01,actual,36096
+TLI4,Inner London - East,2015-07-01,actual,35957
+TLI4,Inner London - East,2016-07-01,actual,36132
+TLI4,Inner London - East,2017-07-01,actual,35266
+TLI4,Inner London - East,2018-07-01,actual,34426
+TLI4,Inner London - East,2019-07-01,actual,32970
+TLI4,Inner London - East,2020-07-01,actual,31947
+TLI4,Inner London - East,2021-07-01,actual,30233
+TLI4,Inner London - East,2022-07-01,actual,30366
+TLI4,Inner London - East,2023-07-01,predicted,28815.3
+TLI5,Outer London - East and North East,1992-07-01,actual,22999
+TLI5,Outer London - East and North East,1993-07-01,actual,22526
+TLI5,Outer London - East and North East,1994-07-01,actual,22173
+TLI5,Outer London - East and North East,1995-07-01,actual,21768
+TLI5,Outer London - East and North East,1996-07-01,actual,21453
+TLI5,Outer London - East and North East,1997-07-01,actual,21695
+TLI5,Outer London - East and North East,1998-07-01,actual,21505
+TLI5,Outer London - East and North East,1999-07-01,actual,21467
+TLI5,Outer London - East and North East,2000-07-01,actual,21284
+TLI5,Outer London - East and North East,2001-07-01,actual,21071
+TLI5,Outer London - East and North East,2002-07-01,actual,21046
+TLI5,Outer London - East and North East,2003-07-01,actual,21831
+TLI5,Outer London - East and North East,2004-07-01,actual,22568
+TLI5,Outer London - East and North East,2005-07-01,actual,23913
+TLI5,Outer London - East and North East,2006-07-01,actual,24625
+TLI5,Outer London - East and North East,2007-07-01,actual,26174
+TLI5,Outer London - East and North East,2008-07-01,actual,27236
+TLI5,Outer London - East and North East,2009-07-01,actual,27365
+TLI5,Outer London - East and North East,2010-07-01,actual,27855
+TLI5,Outer London - East and North East,2011-07-01,actual,28590
+TLI5,Outer London - East and North East,2012-07-01,actual,29166
+TLI5,Outer London - East and North East,2013-07-01,actual,28754
+TLI5,Outer London - East and North East,2014-07-01,actual,28219
+TLI5,Outer London - East and North East,2015-07-01,actual,28841
+TLI5,Outer London - East and North East,2016-07-01,actual,29737
+TLI5,Outer London - East and North East,2017-07-01,actual,29241
+TLI5,Outer London - East and North East,2018-07-01,actual,28556
+TLI5,Outer London - East and North East,2019-07-01,actual,27515
+TLI5,Outer London - East and North East,2020-07-01,actual,26935
+TLI5,Outer London - East and North East,2021-07-01,actual,25317
+TLI5,Outer London - East and North East,2022-07-01,actual,25577
+TLI5,Outer London - East and North East,2023-07-01,predicted,24966.7
+TLI6,Outer London - South,1992-07-01,actual,15597
+TLI6,Outer London - South,1993-07-01,actual,15191
+TLI6,Outer London - South,1994-07-01,actual,15292
+TLI6,Outer London - South,1995-07-01,actual,15337
+TLI6,Outer London - South,1996-07-01,actual,14990
+TLI6,Outer London - South,1997-07-01,actual,15400
+TLI6,Outer London - South,1998-07-01,actual,15147
+TLI6,Outer London - South,1999-07-01,actual,15107
+TLI6,Outer London - South,2000-07-01,actual,14906
+TLI6,Outer London - South,2001-07-01,actual,14565
+TLI6,Outer London - South,2002-07-01,actual,14147
+TLI6,Outer London - South,2003-07-01,actual,14666
+TLI6,Outer London - South,2004-07-01,actual,15212
+TLI6,Outer London - South,2005-07-01,actual,15758
+TLI6,Outer London - South,2006-07-01,actual,15825
+TLI6,Outer London - South,2007-07-01,actual,16810
+TLI6,Outer London - South,2008-07-01,actual,17601
+TLI6,Outer London - South,2009-07-01,actual,17546
+TLI6,Outer London - South,2010-07-01,actual,17913
+TLI6,Outer London - South,2011-07-01,actual,18396
+TLI6,Outer London - South,2012-07-01,actual,18577
+TLI6,Outer London - South,2013-07-01,actual,18054
+TLI6,Outer London - South,2014-07-01,actual,17769
+TLI6,Outer London - South,2015-07-01,actual,18269
+TLI6,Outer London - South,2016-07-01,actual,18487
+TLI6,Outer London - South,2017-07-01,actual,18245
+TLI6,Outer London - South,2018-07-01,actual,17510
+TLI6,Outer London - South,2019-07-01,actual,16702
+TLI6,Outer London - South,2020-07-01,actual,16544
+TLI6,Outer London - South,2021-07-01,actual,15454
+TLI6,Outer London - South,2022-07-01,actual,15336
+TLI6,Outer London - South,2023-07-01,predicted,14717.1
+TLI7,Outer London - West and North West,1992-07-01,actual,24449
+TLI7,Outer London - West and North West,1993-07-01,actual,24163
+TLI7,Outer London - West and North West,1994-07-01,actual,24673
+TLI7,Outer London - West and North West,1995-07-01,actual,24048
+TLI7,Outer London - West and North West,1996-07-01,actual,24055
+TLI7,Outer London - West and North West,1997-07-01,actual,24753
+TLI7,Outer London - West and North West,1998-07-01,actual,24677
+TLI7,Outer London - West and North West,1999-07-01,actual,24431
+TLI7,Outer London - West and North West,2000-07-01,actual,24288
+TLI7,Outer London - West and North West,2001-07-01,actual,23600
+TLI7,Outer London - West and North West,2002-07-01,actual,23762
+TLI7,Outer London - West and North West,2003-07-01,actual,25013
+TLI7,Outer London - West and North West,2004-07-01,actual,25568
+TLI7,Outer London - West and North West,2005-07-01,actual,26343
+TLI7,Outer London - West and North West,2006-07-01,actual,27279
+TLI7,Outer London - West and North West,2007-07-01,actual,28316
+TLI7,Outer London - West and North West,2008-07-01,actual,30167
+TLI7,Outer London - West and North West,2009-07-01,actual,30127
+TLI7,Outer London - West and North West,2010-07-01,actual,30992
+TLI7,Outer London - West and North West,2011-07-01,actual,31882
+TLI7,Outer London - West and North West,2012-07-01,actual,32329
+TLI7,Outer London - West and North West,2013-07-01,actual,31491
+TLI7,Outer London - West and North West,2014-07-01,actual,30882
+TLI7,Outer London - West and North West,2015-07-01,actual,30719
+TLI7,Outer London - West and North West,2016-07-01,actual,30883
+TLI7,Outer London - West and North West,2017-07-01,actual,30293
+TLI7,Outer London - West and North West,2018-07-01,actual,29388
+TLI7,Outer London - West and North West,2019-07-01,actual,28321
+TLI7,Outer London - West and North West,2020-07-01,actual,27928
+TLI7,Outer London - West and North West,2021-07-01,actual,26581
+TLI7,Outer London - West and North West,2022-07-01,actual,26452
+TLI7,Outer London - West and North West,2023-07-01,predicted,26357.4
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",1992-07-01,actual,28276
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",1993-07-01,actual,27121
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",1994-07-01,actual,27640
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",1995-07-01,actual,26859
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",1996-07-01,actual,26396
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",1997-07-01,actual,27204
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",1998-07-01,actual,26852
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",1999-07-01,actual,26945
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2000-07-01,actual,26338
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2001-07-01,actual,25761
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2002-07-01,actual,24984
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2003-07-01,actual,25927
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2004-07-01,actual,26981
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2005-07-01,actual,26933
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2006-07-01,actual,27831
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2007-07-01,actual,29075
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2008-07-01,actual,30341
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2009-07-01,actual,30082
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2010-07-01,actual,30763
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2011-07-01,actual,31319
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2012-07-01,actual,31122
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2013-07-01,actual,30274
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2014-07-01,actual,29477
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2015-07-01,actual,29407
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2016-07-01,actual,29768
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2017-07-01,actual,28548
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2018-07-01,actual,28086
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2019-07-01,actual,27122
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2020-07-01,actual,26596
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2021-07-01,actual,26137
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2022-07-01,actual,26694
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2023-07-01,predicted,26420.2
+TLJ2,"Surrey, East and West Sussex",1992-07-01,actual,29612
+TLJ2,"Surrey, East and West Sussex",1993-07-01,actual,28521
+TLJ2,"Surrey, East and West Sussex",1994-07-01,actual,29218
+TLJ2,"Surrey, East and West Sussex",1995-07-01,actual,28753
+TLJ2,"Surrey, East and West Sussex",1996-07-01,actual,28356
+TLJ2,"Surrey, East and West Sussex",1997-07-01,actual,28915
+TLJ2,"Surrey, East and West Sussex",1998-07-01,actual,28971
+TLJ2,"Surrey, East and West Sussex",1999-07-01,actual,28833
+TLJ2,"Surrey, East and West Sussex",2000-07-01,actual,27840
+TLJ2,"Surrey, East and West Sussex",2001-07-01,actual,27334
+TLJ2,"Surrey, East and West Sussex",2002-07-01,actual,26275
+TLJ2,"Surrey, East and West Sussex",2003-07-01,actual,27260
+TLJ2,"Surrey, East and West Sussex",2004-07-01,actual,28179
+TLJ2,"Surrey, East and West Sussex",2005-07-01,actual,28020
+TLJ2,"Surrey, East and West Sussex",2006-07-01,actual,28895
+TLJ2,"Surrey, East and West Sussex",2007-07-01,actual,30116
+TLJ2,"Surrey, East and West Sussex",2008-07-01,actual,31075
+TLJ2,"Surrey, East and West Sussex",2009-07-01,actual,30633
+TLJ2,"Surrey, East and West Sussex",2010-07-01,actual,31482
+TLJ2,"Surrey, East and West Sussex",2011-07-01,actual,32018
+TLJ2,"Surrey, East and West Sussex",2012-07-01,actual,32176
+TLJ2,"Surrey, East and West Sussex",2013-07-01,actual,31118
+TLJ2,"Surrey, East and West Sussex",2014-07-01,actual,30496
+TLJ2,"Surrey, East and West Sussex",2015-07-01,actual,30627
+TLJ2,"Surrey, East and West Sussex",2016-07-01,actual,30578
+TLJ2,"Surrey, East and West Sussex",2017-07-01,actual,29474
+TLJ2,"Surrey, East and West Sussex",2018-07-01,actual,28946
+TLJ2,"Surrey, East and West Sussex",2019-07-01,actual,28155
+TLJ2,"Surrey, East and West Sussex",2020-07-01,actual,27312
+TLJ2,"Surrey, East and West Sussex",2021-07-01,actual,26712
+TLJ2,"Surrey, East and West Sussex",2022-07-01,actual,27293
+TLJ2,"Surrey, East and West Sussex",2023-07-01,predicted,26288.1
+TLJ3,Hampshire and Isle of Wight,1992-07-01,actual,22350
+TLJ3,Hampshire and Isle of Wight,1993-07-01,actual,21810
+TLJ3,Hampshire and Isle of Wight,1994-07-01,actual,21823
+TLJ3,Hampshire and Isle of Wight,1995-07-01,actual,21142
+TLJ3,Hampshire and Isle of Wight,1996-07-01,actual,20692
+TLJ3,Hampshire and Isle of Wight,1997-07-01,actual,21002
+TLJ3,Hampshire and Isle of Wight,1998-07-01,actual,20182
+TLJ3,Hampshire and Isle of Wight,1999-07-01,actual,20423
+TLJ3,Hampshire and Isle of Wight,2000-07-01,actual,19463
+TLJ3,Hampshire and Isle of Wight,2001-07-01,actual,18864
+TLJ3,Hampshire and Isle of Wight,2002-07-01,actual,18379
+TLJ3,Hampshire and Isle of Wight,2003-07-01,actual,18779
+TLJ3,Hampshire and Isle of Wight,2004-07-01,actual,19559
+TLJ3,Hampshire and Isle of Wight,2005-07-01,actual,19745
+TLJ3,Hampshire and Isle of Wight,2006-07-01,actual,20530
+TLJ3,Hampshire and Isle of Wight,2007-07-01,actual,20813
+TLJ3,Hampshire and Isle of Wight,2008-07-01,actual,21762
+TLJ3,Hampshire and Isle of Wight,2009-07-01,actual,21623
+TLJ3,Hampshire and Isle of Wight,2010-07-01,actual,22061
+TLJ3,Hampshire and Isle of Wight,2011-07-01,actual,22802
+TLJ3,Hampshire and Isle of Wight,2012-07-01,actual,22906
+TLJ3,Hampshire and Isle of Wight,2013-07-01,actual,22169
+TLJ3,Hampshire and Isle of Wight,2014-07-01,actual,21614
+TLJ3,Hampshire and Isle of Wight,2015-07-01,actual,21791
+TLJ3,Hampshire and Isle of Wight,2016-07-01,actual,21623
+TLJ3,Hampshire and Isle of Wight,2017-07-01,actual,20900
+TLJ3,Hampshire and Isle of Wight,2018-07-01,actual,20137
+TLJ3,Hampshire and Isle of Wight,2019-07-01,actual,19774
+TLJ3,Hampshire and Isle of Wight,2020-07-01,actual,19401
+TLJ3,Hampshire and Isle of Wight,2021-07-01,actual,18896
+TLJ3,Hampshire and Isle of Wight,2022-07-01,actual,19039
+TLJ3,Hampshire and Isle of Wight,2023-07-01,predicted,18805.5
+TLJ4,Kent,1992-07-01,actual,20764
+TLJ4,Kent,1993-07-01,actual,20013
+TLJ4,Kent,1994-07-01,actual,20165
+TLJ4,Kent,1995-07-01,actual,19296
+TLJ4,Kent,1996-07-01,actual,19077
+TLJ4,Kent,1997-07-01,actual,19396
+TLJ4,Kent,1998-07-01,actual,19099
+TLJ4,Kent,1999-07-01,actual,18875
+TLJ4,Kent,2000-07-01,actual,18125
+TLJ4,Kent,2001-07-01,actual,17764
+TLJ4,Kent,2002-07-01,actual,17560
+TLJ4,Kent,2003-07-01,actual,17881
+TLJ4,Kent,2004-07-01,actual,18524
+TLJ4,Kent,2005-07-01,actual,18390
+TLJ4,Kent,2006-07-01,actual,19135
+TLJ4,Kent,2007-07-01,actual,19762
+TLJ4,Kent,2008-07-01,actual,20307
+TLJ4,Kent,2009-07-01,actual,20437
+TLJ4,Kent,2010-07-01,actual,20818
+TLJ4,Kent,2011-07-01,actual,21297
+TLJ4,Kent,2012-07-01,actual,21675
+TLJ4,Kent,2013-07-01,actual,20944
+TLJ4,Kent,2014-07-01,actual,20761
+TLJ4,Kent,2015-07-01,actual,20848
+TLJ4,Kent,2016-07-01,actual,20857
+TLJ4,Kent,2017-07-01,actual,21018
+TLJ4,Kent,2018-07-01,actual,20810
+TLJ4,Kent,2019-07-01,actual,20218
+TLJ4,Kent,2020-07-01,actual,19757
+TLJ4,Kent,2021-07-01,actual,19239
+TLJ4,Kent,2022-07-01,actual,19918
+TLJ4,Kent,2023-07-01,predicted,19528.9
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",1992-07-01,actual,27148
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",1993-07-01,actual,26765
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",1994-07-01,actual,27146
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",1995-07-01,actual,26400
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",1996-07-01,actual,25493
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",1997-07-01,actual,26379
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",1998-07-01,actual,25634
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",1999-07-01,actual,25476
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2000-07-01,actual,24610
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2001-07-01,actual,23946
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2002-07-01,actual,23358
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2003-07-01,actual,24240
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2004-07-01,actual,25048
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2005-07-01,actual,25212
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2006-07-01,actual,25653
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2007-07-01,actual,26821
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2008-07-01,actual,28350
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2009-07-01,actual,27781
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2010-07-01,actual,28435
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2011-07-01,actual,29258
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2012-07-01,actual,29521
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2013-07-01,actual,28726
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2014-07-01,actual,28259
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2015-07-01,actual,28010
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2016-07-01,actual,28495
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2017-07-01,actual,27448
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2018-07-01,actual,27015
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2019-07-01,actual,26132
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2020-07-01,actual,25264
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2021-07-01,actual,24823
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2022-07-01,actual,25065
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2023-07-01,predicted,24658.4
+TLK2,Dorset and Somerset,1992-07-01,actual,13047
+TLK2,Dorset and Somerset,1993-07-01,actual,12519
+TLK2,Dorset and Somerset,1994-07-01,actual,12878
+TLK2,Dorset and Somerset,1995-07-01,actual,12109
+TLK2,Dorset and Somerset,1996-07-01,actual,12017
+TLK2,Dorset and Somerset,1997-07-01,actual,12577
+TLK2,Dorset and Somerset,1998-07-01,actual,12156
+TLK2,Dorset and Somerset,1999-07-01,actual,11806
+TLK2,Dorset and Somerset,2000-07-01,actual,11412
+TLK2,Dorset and Somerset,2001-07-01,actual,10913
+TLK2,Dorset and Somerset,2002-07-01,actual,10854
+TLK2,Dorset and Somerset,2003-07-01,actual,11436
+TLK2,Dorset and Somerset,2004-07-01,actual,11542
+TLK2,Dorset and Somerset,2005-07-01,actual,11817
+TLK2,Dorset and Somerset,2006-07-01,actual,11737
+TLK2,Dorset and Somerset,2007-07-01,actual,12375
+TLK2,Dorset and Somerset,2008-07-01,actual,13049
+TLK2,Dorset and Somerset,2009-07-01,actual,13130
+TLK2,Dorset and Somerset,2010-07-01,actual,13202
+TLK2,Dorset and Somerset,2011-07-01,actual,13423
+TLK2,Dorset and Somerset,2012-07-01,actual,13608
+TLK2,Dorset and Somerset,2013-07-01,actual,13118
+TLK2,Dorset and Somerset,2014-07-01,actual,13004
+TLK2,Dorset and Somerset,2015-07-01,actual,12892
+TLK2,Dorset and Somerset,2016-07-01,actual,12906
+TLK2,Dorset and Somerset,2017-07-01,actual,12537
+TLK2,Dorset and Somerset,2018-07-01,actual,12167
+TLK2,Dorset and Somerset,2019-07-01,actual,11632
+TLK2,Dorset and Somerset,2020-07-01,actual,11392
+TLK2,Dorset and Somerset,2021-07-01,actual,11204
+TLK2,Dorset and Somerset,2022-07-01,actual,11148
+TLK2,Dorset and Somerset,2023-07-01,predicted,10656.9
+TLK3,Cornwall and Isles of Scilly,1992-07-01,actual,5401
+TLK3,Cornwall and Isles of Scilly,1993-07-01,actual,5337
+TLK3,Cornwall and Isles of Scilly,1994-07-01,actual,5314
+TLK3,Cornwall and Isles of Scilly,1995-07-01,actual,4962
+TLK3,Cornwall and Isles of Scilly,1996-07-01,actual,4983
+TLK3,Cornwall and Isles of Scilly,1997-07-01,actual,5213
+TLK3,Cornwall and Isles of Scilly,1998-07-01,actual,4972
+TLK3,Cornwall and Isles of Scilly,1999-07-01,actual,4948
+TLK3,Cornwall and Isles of Scilly,2000-07-01,actual,4709
+TLK3,Cornwall and Isles of Scilly,2001-07-01,actual,4543
+TLK3,Cornwall and Isles of Scilly,2002-07-01,actual,4469
+TLK3,Cornwall and Isles of Scilly,2003-07-01,actual,4640
+TLK3,Cornwall and Isles of Scilly,2004-07-01,actual,4712
+TLK3,Cornwall and Isles of Scilly,2005-07-01,actual,4783
+TLK3,Cornwall and Isles of Scilly,2006-07-01,actual,4926
+TLK3,Cornwall and Isles of Scilly,2007-07-01,actual,5213
+TLK3,Cornwall and Isles of Scilly,2008-07-01,actual,5310
+TLK3,Cornwall and Isles of Scilly,2009-07-01,actual,5404
+TLK3,Cornwall and Isles of Scilly,2010-07-01,actual,5424
+TLK3,Cornwall and Isles of Scilly,2011-07-01,actual,5757
+TLK3,Cornwall and Isles of Scilly,2012-07-01,actual,5842
+TLK3,Cornwall and Isles of Scilly,2013-07-01,actual,5664
+TLK3,Cornwall and Isles of Scilly,2014-07-01,actual,5452
+TLK3,Cornwall and Isles of Scilly,2015-07-01,actual,5446
+TLK3,Cornwall and Isles of Scilly,2016-07-01,actual,5390
+TLK3,Cornwall and Isles of Scilly,2017-07-01,actual,5205
+TLK3,Cornwall and Isles of Scilly,2018-07-01,actual,5160
+TLK3,Cornwall and Isles of Scilly,2019-07-01,actual,4889
+TLK3,Cornwall and Isles of Scilly,2020-07-01,actual,4729
+TLK3,Cornwall and Isles of Scilly,2021-07-01,actual,4688
+TLK3,Cornwall and Isles of Scilly,2022-07-01,actual,4727
+TLK3,Cornwall and Isles of Scilly,2023-07-01,predicted,4518.5
+TLK4,Devon,1992-07-01,actual,12138
+TLK4,Devon,1993-07-01,actual,11742
+TLK4,Devon,1994-07-01,actual,11820
+TLK4,Devon,1995-07-01,actual,11301
+TLK4,Devon,1996-07-01,actual,11190
+TLK4,Devon,1997-07-01,actual,11494
+TLK4,Devon,1998-07-01,actual,10993
+TLK4,Devon,1999-07-01,actual,10834
+TLK4,Devon,2000-07-01,actual,10408
+TLK4,Devon,2001-07-01,actual,9889
+TLK4,Devon,2002-07-01,actual,9837
+TLK4,Devon,2003-07-01,actual,10279
+TLK4,Devon,2004-07-01,actual,10506
+TLK4,Devon,2005-07-01,actual,10794
+TLK4,Devon,2006-07-01,actual,11016
+TLK4,Devon,2007-07-01,actual,11415
+TLK4,Devon,2008-07-01,actual,11820
+TLK4,Devon,2009-07-01,actual,11672
+TLK4,Devon,2010-07-01,actual,12123
+TLK4,Devon,2011-07-01,actual,12299
+TLK4,Devon,2012-07-01,actual,12374
+TLK4,Devon,2013-07-01,actual,12098
+TLK4,Devon,2014-07-01,actual,11790
+TLK4,Devon,2015-07-01,actual,11542
+TLK4,Devon,2016-07-01,actual,11650
+TLK4,Devon,2017-07-01,actual,11039
+TLK4,Devon,2018-07-01,actual,10884
+TLK4,Devon,2019-07-01,actual,10669
+TLK4,Devon,2020-07-01,actual,10174
+TLK4,Devon,2021-07-01,actual,9944
+TLK4,Devon,2022-07-01,actual,10069
+TLK4,Devon,2023-07-01,predicted,9615

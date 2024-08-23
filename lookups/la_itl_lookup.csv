@@ -1,0 +1,377 @@
+lad21cd,itl221cd,itl221nm
+E06000001,TLC1,Tees Valley and Durham
+E06000004,TLC1,Tees Valley and Durham
+E06000002,TLC1,Tees Valley and Durham
+E06000003,TLC1,Tees Valley and Durham
+E06000005,TLC1,Tees Valley and Durham
+E06000047,TLC1,Tees Valley and Durham
+E06000057,TLC2,"Northumberland, and Tyne and Wear"
+E08000021,TLC2,"Northumberland, and Tyne and Wear"
+E08000022,TLC2,"Northumberland, and Tyne and Wear"
+E08000023,TLC2,"Northumberland, and Tyne and Wear"
+E08000037,TLC2,"Northumberland, and Tyne and Wear"
+E08000024,TLC2,"Northumberland, and Tyne and Wear"
+E07000026,TLD1,Cumbria
+E07000027,TLD1,Cumbria
+E07000029,TLD1,Cumbria
+E07000028,TLD1,Cumbria
+E07000030,TLD1,Cumbria
+E07000031,TLD1,Cumbria
+E08000003,TLD3,Greater Manchester
+E08000006,TLD3,Greater Manchester
+E08000009,TLD3,Greater Manchester
+E08000007,TLD3,Greater Manchester
+E08000008,TLD3,Greater Manchester
+E08000001,TLD3,Greater Manchester
+E08000010,TLD3,Greater Manchester
+E08000002,TLD3,Greater Manchester
+E08000004,TLD3,Greater Manchester
+E08000005,TLD3,Greater Manchester
+E06000008,TLD4,Lancashire
+E06000009,TLD4,Lancashire
+E07000121,TLD4,Lancashire
+E07000128,TLD4,Lancashire
+E07000119,TLD4,Lancashire
+E07000123,TLD4,Lancashire
+E07000124,TLD4,Lancashire
+E07000126,TLD4,Lancashire
+E07000117,TLD4,Lancashire
+E07000120,TLD4,Lancashire
+E07000122,TLD4,Lancashire
+E07000125,TLD4,Lancashire
+E07000118,TLD4,Lancashire
+E07000127,TLD4,Lancashire
+E06000007,TLD6,Cheshire
+E06000049,TLD6,Cheshire
+E06000050,TLD6,Cheshire
+E06000006,TLD7,Merseyside
+E08000011,TLD7,Merseyside
+E08000013,TLD7,Merseyside
+E08000012,TLD7,Merseyside
+E08000014,TLD7,Merseyside
+E08000015,TLD7,Merseyside
+E06000010,TLE1,East Yorkshire and Northern Lincolnshire
+E06000011,TLE1,East Yorkshire and Northern Lincolnshire
+E06000012,TLE1,East Yorkshire and Northern Lincolnshire
+E06000013,TLE1,East Yorkshire and Northern Lincolnshire
+E06000014,TLE2,North Yorkshire
+E06000019,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E07000234,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E07000235,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E07000236,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E07000237,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E07000238,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E07000239,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E07000218,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E07000219,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E07000220,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E07000221,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E07000222,TLG1,"Herefordshire, Worcestershire and Warwickshire"
+E06000020,TLG2,Shropshire and Staffordshire
+E06000051,TLG2,Shropshire and Staffordshire
+E06000021,TLG2,Shropshire and Staffordshire
+E07000192,TLG2,Shropshire and Staffordshire
+E07000193,TLG2,Shropshire and Staffordshire
+E07000194,TLG2,Shropshire and Staffordshire
+E07000195,TLG2,Shropshire and Staffordshire
+E07000196,TLG2,Shropshire and Staffordshire
+E07000197,TLG2,Shropshire and Staffordshire
+E07000198,TLG2,Shropshire and Staffordshire
+E07000199,TLG2,Shropshire and Staffordshire
+E08000025,TLG3,West Midlands
+E08000029,TLG3,West Midlands
+E08000026,TLG3,West Midlands
+E08000027,TLG3,West Midlands
+E08000028,TLG3,West Midlands
+E08000030,TLG3,West Midlands
+E08000031,TLG3,West Midlands
+E06000031,TLH1,East Anglia
+E07000008,TLH1,East Anglia
+E07000009,TLH1,East Anglia
+E07000010,TLH1,East Anglia
+E07000011,TLH1,East Anglia
+E07000012,TLH1,East Anglia
+E07000200,TLH1,East Anglia
+E07000202,TLH1,East Anglia
+E07000203,TLH1,East Anglia
+E07000244,TLH1,East Anglia
+E07000245,TLH1,East Anglia
+E07000144,TLH1,East Anglia
+E07000145,TLH1,East Anglia
+E07000148,TLH1,East Anglia
+E07000146,TLH1,East Anglia
+E07000147,TLH1,East Anglia
+E07000143,TLH1,East Anglia
+E07000149,TLH1,East Anglia
+E06000032,TLH2,Bedfordshire and Hertfordshire
+E07000095,TLH2,Bedfordshire and Hertfordshire
+E07000096,TLH2,Bedfordshire and Hertfordshire
+E07000098,TLH2,Bedfordshire and Hertfordshire
+E07000099,TLH2,Bedfordshire and Hertfordshire
+E07000102,TLH2,Bedfordshire and Hertfordshire
+E07000103,TLH2,Bedfordshire and Hertfordshire
+E07000240,TLH2,Bedfordshire and Hertfordshire
+E07000241,TLH2,Bedfordshire and Hertfordshire
+E07000242,TLH2,Bedfordshire and Hertfordshire
+E07000243,TLH2,Bedfordshire and Hertfordshire
+E06000055,TLH2,Bedfordshire and Hertfordshire
+E06000056,TLH2,Bedfordshire and Hertfordshire
+E06000033,TLH3,Essex
+E06000034,TLH3,Essex
+E07000067,TLH3,Essex
+E07000071,TLH3,Essex
+E07000076,TLH3,Essex
+E07000072,TLH3,Essex
+E07000073,TLH3,Essex
+E07000077,TLH3,Essex
+E07000068,TLH3,Essex
+E07000070,TLH3,Essex
+E07000074,TLH3,Essex
+E07000066,TLH3,Essex
+E07000069,TLH3,Essex
+E07000075,TLH3,Essex
+E09000001,TLI3,Inner London - West
+E09000007,TLI3,Inner London - West
+E09000033,TLI3,Inner London - West
+E09000013,TLI3,Inner London - West
+E09000020,TLI3,Inner London - West
+E09000032,TLI3,Inner London - West
+E09000012,TLI4,Inner London - East
+E09000025,TLI4,Inner London - East
+E09000030,TLI4,Inner London - East
+E09000014,TLI4,Inner London - East
+E09000019,TLI4,Inner London - East
+E09000023,TLI4,Inner London - East
+E09000028,TLI4,Inner London - East
+E09000022,TLI4,Inner London - East
+E09000004,TLI5,Outer London - East and North East
+E09000011,TLI5,Outer London - East and North East
+E09000002,TLI5,Outer London - East and North East
+E09000016,TLI5,Outer London - East and North East
+E09000026,TLI5,Outer London - East and North East
+E09000031,TLI5,Outer London - East and North East
+E09000010,TLI5,Outer London - East and North East
+E09000006,TLI6,Outer London - South
+E09000008,TLI6,Outer London - South
+E09000021,TLI6,Outer London - South
+E09000024,TLI6,Outer London - South
+E09000029,TLI6,Outer London - South
+E09000003,TLI7,Outer London - West and North West
+E09000005,TLI7,Outer London - West and North West
+E09000009,TLI7,Outer London - West and North West
+E09000015,TLI7,Outer London - West and North West
+E09000017,TLI7,Outer London - West and North West
+E09000018,TLI7,Outer London - West and North West
+E09000027,TLI7,Outer London - West and North West
+E06000036,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E06000037,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E06000038,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E06000039,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E07000163,TLE2,North Yorkshire
+E07000164,TLE2,North Yorkshire
+E07000165,TLE2,North Yorkshire
+E07000166,TLE2,North Yorkshire
+E07000167,TLE2,North Yorkshire
+E07000168,TLE2,North Yorkshire
+E07000169,TLE2,North Yorkshire
+E08000016,TLE3,South Yorkshire
+E08000017,TLE3,South Yorkshire
+E08000018,TLE3,South Yorkshire
+E08000019,TLE3,South Yorkshire
+E08000032,TLE4,West Yorkshire
+E08000035,TLE4,West Yorkshire
+E08000033,TLE4,West Yorkshire
+E08000034,TLE4,West Yorkshire
+E08000036,TLE4,West Yorkshire
+E06000015,TLF1,Derbyshire and Nottinghamshire
+E07000033,TLF1,Derbyshire and Nottinghamshire
+E07000034,TLF1,Derbyshire and Nottinghamshire
+E07000038,TLF1,Derbyshire and Nottinghamshire
+E07000032,TLF1,Derbyshire and Nottinghamshire
+E07000035,TLF1,Derbyshire and Nottinghamshire
+E07000036,TLF1,Derbyshire and Nottinghamshire
+E07000037,TLF1,Derbyshire and Nottinghamshire
+E07000039,TLF1,Derbyshire and Nottinghamshire
+E06000018,TLF1,Derbyshire and Nottinghamshire
+E07000170,TLF1,Derbyshire and Nottinghamshire
+E07000171,TLF1,Derbyshire and Nottinghamshire
+E07000174,TLF1,Derbyshire and Nottinghamshire
+E07000175,TLF1,Derbyshire and Nottinghamshire
+E07000172,TLF1,Derbyshire and Nottinghamshire
+E07000173,TLF1,Derbyshire and Nottinghamshire
+E07000176,TLF1,Derbyshire and Nottinghamshire
+E06000016,TLF2,"Leicestershire, Rutland and Northamptonshire"
+E06000017,TLF2,"Leicestershire, Rutland and Northamptonshire"
+E07000129,TLF2,"Leicestershire, Rutland and Northamptonshire"
+E07000130,TLF2,"Leicestershire, Rutland and Northamptonshire"
+E07000131,TLF2,"Leicestershire, Rutland and Northamptonshire"
+E07000132,TLF2,"Leicestershire, Rutland and Northamptonshire"
+E07000133,TLF2,"Leicestershire, Rutland and Northamptonshire"
+E07000134,TLF2,"Leicestershire, Rutland and Northamptonshire"
+E07000135,TLF2,"Leicestershire, Rutland and Northamptonshire"
+E06000062,TLF2,"Leicestershire, Rutland and Northamptonshire"
+E06000061,TLF2,"Leicestershire, Rutland and Northamptonshire"
+E07000136,TLF3,Lincolnshire
+E07000137,TLF3,Lincolnshire
+E07000138,TLF3,Lincolnshire
+E07000139,TLF3,Lincolnshire
+E07000140,TLF3,Lincolnshire
+E07000141,TLF3,Lincolnshire
+E07000142,TLF3,Lincolnshire
+S12000033,TLM5,North Eastern Scotland
+E07000110,TLJ4,Kent
+E07000111,TLJ4,Kent
+S12000034,TLM5,North Eastern Scotland
+E07000115,TLJ4,Kent
+S12000017,TLM6,Highlands and Islands
+E07000116,TLJ4,Kent
+E06000023,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+E06000022,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+E06000024,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+S12000020,TLM6,Highlands and Islands
+E06000025,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+E07000078,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+E07000079,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+E07000080,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+E07000081,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+E07000082,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+E07000083,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+E06000030,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+E06000054,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area"
+E07000187,TLK2,Dorset and Somerset
+E07000188,TLK2,Dorset and Somerset
+E07000189,TLK2,Dorset and Somerset
+E07000246,TLK2,Dorset and Somerset
+E06000058,TLK2,Dorset and Somerset
+E06000059,TLK2,Dorset and Somerset
+E06000052,TLK3,Cornwall and Isles of Scilly
+E06000053,TLK3,Cornwall and Isles of Scilly
+E06000026,TLK4,Devon
+E06000027,TLK4,Devon
+E07000040,TLK4,Devon
+E07000041,TLK4,Devon
+E07000042,TLK4,Devon
+E07000043,TLK4,Devon
+E07000044,TLK4,Devon
+E07000045,TLK4,Devon
+E07000046,TLK4,Devon
+E07000047,TLK4,Devon
+W06000001,TLL1,West Wales and The Valleys
+W06000002,TLL1,West Wales and The Valleys
+W06000003,TLL1,West Wales and The Valleys
+W06000004,TLL1,West Wales and The Valleys
+W06000008,TLL1,West Wales and The Valleys
+W06000009,TLL1,West Wales and The Valleys
+W06000010,TLL1,West Wales and The Valleys
+W06000016,TLL1,West Wales and The Valleys
+W06000024,TLL1,West Wales and The Valleys
+W06000018,TLL1,West Wales and The Valleys
+W06000019,TLL1,West Wales and The Valleys
+W06000020,TLL1,West Wales and The Valleys
+W06000012,TLL1,West Wales and The Valleys
+W06000013,TLL1,West Wales and The Valleys
+W06000011,TLL1,West Wales and The Valleys
+W06000021,TLL2,East Wales
+W06000022,TLL2,East Wales
+W06000014,TLL2,East Wales
+W06000015,TLL2,East Wales
+W06000005,TLL2,East Wales
+W06000006,TLL2,East Wales
+W06000023,TLL2,East Wales
+S12000021,TLM6,Highlands and Islands
+S12000035,TLM6,Highlands and Islands
+S12000013,TLM6,Highlands and Islands
+S12000023,TLM6,Highlands and Islands
+S12000027,TLM6,Highlands and Islands
+S12000041,TLM7,Eastern Scotland
+S12000042,TLM7,Eastern Scotland
+S12000005,TLM7,Eastern Scotland
+S12000047,TLM7,Eastern Scotland
+S12000010,TLM7,Eastern Scotland
+S12000019,TLM7,Eastern Scotland
+S12000036,TLM7,Eastern Scotland
+S12000014,TLM7,Eastern Scotland
+S12000030,TLM7,Eastern Scotland
+S12000048,TLM7,Eastern Scotland
+S12000040,TLM7,Eastern Scotland
+S12000035,TLM8,West Central Scotland
+S12000039,TLM8,West Central Scotland
+S12000045,TLM8,West Central Scotland
+S12000049,TLM8,West Central Scotland
+S12000011,TLM8,West Central Scotland
+S12000038,TLM8,West Central Scotland
+S12000018,TLM8,West Central Scotland
+S12000050,TLM8,West Central Scotland
+S12000026,TLM9,Southern Scotland
+S12000006,TLM9,Southern Scotland
+S12000008,TLM9,Southern Scotland
+S12000021,TLM9,Southern Scotland
+S12000028,TLM9,Southern Scotland
+S12000029,TLM9,Southern Scotland
+N09000003,TLN0,Northern Ireland
+N09000002,TLN0,Northern Ireland
+N09000010,TLN0,Northern Ireland
+N09000011,TLN0,Northern Ireland
+N09000005,TLN0,Northern Ireland
+N09000009,TLN0,Northern Ireland
+N09000004,TLN0,Northern Ireland
+N09000001,TLN0,Northern Ireland
+N09000007,TLN0,Northern Ireland
+N09000008,TLN0,Northern Ireland
+N09000006,TLN0,Northern Ireland
+E06000040,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E06000041,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E06000042,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E06000060,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E07000177,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E07000178,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E07000179,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E07000180,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E07000181,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire"
+E06000043,TLJ2,"Surrey, East and West Sussex"
+E07000061,TLJ2,"Surrey, East and West Sussex"
+E07000062,TLJ2,"Surrey, East and West Sussex"
+E07000063,TLJ2,"Surrey, East and West Sussex"
+E07000064,TLJ2,"Surrey, East and West Sussex"
+E07000065,TLJ2,"Surrey, East and West Sussex"
+E07000207,TLJ2,"Surrey, East and West Sussex"
+E07000209,TLJ2,"Surrey, East and West Sussex"
+E07000212,TLJ2,"Surrey, East and West Sussex"
+E07000213,TLJ2,"Surrey, East and West Sussex"
+E07000214,TLJ2,"Surrey, East and West Sussex"
+E07000216,TLJ2,"Surrey, East and West Sussex"
+E07000217,TLJ2,"Surrey, East and West Sussex"
+E07000208,TLJ2,"Surrey, East and West Sussex"
+E07000210,TLJ2,"Surrey, East and West Sussex"
+E07000211,TLJ2,"Surrey, East and West Sussex"
+E07000215,TLJ2,"Surrey, East and West Sussex"
+E07000223,TLJ2,"Surrey, East and West Sussex"
+E07000224,TLJ2,"Surrey, East and West Sussex"
+E07000225,TLJ2,"Surrey, East and West Sussex"
+E07000229,TLJ2,"Surrey, East and West Sussex"
+E07000226,TLJ2,"Surrey, East and West Sussex"
+E07000227,TLJ2,"Surrey, East and West Sussex"
+E07000228,TLJ2,"Surrey, East and West Sussex"
+E06000044,TLJ3,Hampshire and Isle of Wight
+E06000045,TLJ3,Hampshire and Isle of Wight
+E06000046,TLJ3,Hampshire and Isle of Wight
+E07000086,TLJ3,Hampshire and Isle of Wight
+E07000087,TLJ3,Hampshire and Isle of Wight
+E07000088,TLJ3,Hampshire and Isle of Wight
+E07000090,TLJ3,Hampshire and Isle of Wight
+E07000085,TLJ3,Hampshire and Isle of Wight
+E07000091,TLJ3,Hampshire and Isle of Wight
+E07000093,TLJ3,Hampshire and Isle of Wight
+E07000094,TLJ3,Hampshire and Isle of Wight
+E07000084,TLJ3,Hampshire and Isle of Wight
+E07000089,TLJ3,Hampshire and Isle of Wight
+E07000092,TLJ3,Hampshire and Isle of Wight
+E06000035,TLJ4,Kent
+E07000107,TLJ4,Kent
+E07000109,TLJ4,Kent
+E07000113,TLJ4,Kent
+E07000106,TLJ4,Kent
+E07000108,TLJ4,Kent
+E07000112,TLJ4,Kent
+E07000114,TLJ4,Kent
+E07000105,TLJ4,Kent

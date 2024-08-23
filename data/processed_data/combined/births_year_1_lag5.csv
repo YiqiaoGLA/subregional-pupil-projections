@@ -1,0 +1,397 @@
+itl_cd,itl_name,year,annual_births_lag5,headcount
+TLC1,Tees Valley and Durham,2011,13491,13467
+TLC1,Tees Valley and Durham,2012,13662,13508
+TLC1,Tees Valley and Durham,2013,14192,13916
+TLC1,Tees Valley and Durham,2014,13763,13512
+TLC1,Tees Valley and Durham,2015,14273,14218
+TLC1,Tees Valley and Durham,2016,14568,14476
+TLC1,Tees Valley and Durham,2017,14333,14257
+TLC1,Tees Valley and Durham,2018,14078,13982
+TLC1,Tees Valley and Durham,2019,13467,13606
+TLC1,Tees Valley and Durham,2020,13331,13312
+TLC1,Tees Valley and Durham,2021,13147,13359
+TLC1,Tees Valley and Durham,2022,12986,13049
+TLC2,"Northumberland, and Tyne and Wear",2011,15431,14965
+TLC2,"Northumberland, and Tyne and Wear",2012,15422,15066
+TLC2,"Northumberland, and Tyne and Wear",2013,16177,15769
+TLC2,"Northumberland, and Tyne and Wear",2014,15866,15634
+TLC2,"Northumberland, and Tyne and Wear",2015,16030,15690
+TLC2,"Northumberland, and Tyne and Wear",2016,16210,16065
+TLC2,"Northumberland, and Tyne and Wear",2017,16105,16080
+TLC2,"Northumberland, and Tyne and Wear",2018,15568,15578
+TLC2,"Northumberland, and Tyne and Wear",2019,15414,15271
+TLC2,"Northumberland, and Tyne and Wear",2020,14992,15077
+TLC2,"Northumberland, and Tyne and Wear",2021,15435,15514
+TLC2,"Northumberland, and Tyne and Wear",2022,14878,15054
+TLD1,Cumbria,2011,4889,4925
+TLD1,Cumbria,2012,4919,4989
+TLD1,Cumbria,2013,5153,5067
+TLD1,Cumbria,2014,5012,5165
+TLD1,Cumbria,2015,5095,5144
+TLD1,Cumbria,2016,5050,5171
+TLD1,Cumbria,2017,5002,5028
+TLD1,Cumbria,2018,4895,5060
+TLD1,Cumbria,2019,4809,4924
+TLD1,Cumbria,2020,4773,4892
+TLD1,Cumbria,2021,4806,4954
+TLD1,Cumbria,2022,4682,4836
+TLD3,Greater Manchester,2011,34288,32779
+TLD3,Greater Manchester,2012,35013,33732
+TLD3,Greater Manchester,2013,36876,35042
+TLD3,Greater Manchester,2014,36641,35631
+TLD3,Greater Manchester,2015,37584,36259
+TLD3,Greater Manchester,2016,37979,36874
+TLD3,Greater Manchester,2017,37818,36955
+TLD3,Greater Manchester,2018,37116,36476
+TLD3,Greater Manchester,2019,36733,35671
+TLD3,Greater Manchester,2020,36516,35535
+TLD3,Greater Manchester,2021,37119,35795
+TLD3,Greater Manchester,2022,36311,35367
+TLD4,Lancashire,2011,17180,16597
+TLD4,Lancashire,2012,17270,17132
+TLD4,Lancashire,2013,18044,17627
+TLD4,Lancashire,2014,17935,17682
+TLD4,Lancashire,2015,17684,17657
+TLD4,Lancashire,2016,17924,18073
+TLD4,Lancashire,2017,17815,17935
+TLD4,Lancashire,2018,17626,17769
+TLD4,Lancashire,2019,17127,17472
+TLD4,Lancashire,2020,17238,17484
+TLD4,Lancashire,2021,17116,17521
+TLD4,Lancashire,2022,16703,17232
+TLD6,Cheshire,2011,9542,9825
+TLD6,Cheshire,2012,9795,10115
+TLD6,Cheshire,2013,10321,10576
+TLD6,Cheshire,2014,10076,10280
+TLD6,Cheshire,2015,10038,10632
+TLD6,Cheshire,2016,10375,10784
+TLD6,Cheshire,2017,10310,10845
+TLD6,Cheshire,2018,9878,10448
+TLD6,Cheshire,2019,9807,10360
+TLD6,Cheshire,2020,9602,10329
+TLD6,Cheshire,2021,9830,10509
+TLD6,Cheshire,2022,9482,10401
+TLD7,Merseyside,2011,17140,16590
+TLD7,Merseyside,2012,17375,16524
+TLD7,Merseyside,2013,17816,17296
+TLD7,Merseyside,2014,17630,16966
+TLD7,Merseyside,2015,17688,17294
+TLD7,Merseyside,2016,18140,17727
+TLD7,Merseyside,2017,18317,18040
+TLD7,Merseyside,2018,17657,17526
+TLD7,Merseyside,2019,17637,17357
+TLD7,Merseyside,2020,17681,17486
+TLD7,Merseyside,2021,17753,17499
+TLD7,Merseyside,2022,17683,17609
+TLE1,East Yorkshire and Northern Lincolnshire,2011,10089,9976
+TLE1,East Yorkshire and Northern Lincolnshire,2012,10303,10374
+TLE1,East Yorkshire and Northern Lincolnshire,2013,10742,10598
+TLE1,East Yorkshire and Northern Lincolnshire,2014,10498,10578
+TLE1,East Yorkshire and Northern Lincolnshire,2015,10630,10781
+TLE1,East Yorkshire and Northern Lincolnshire,2016,10766,10859
+TLE1,East Yorkshire and Northern Lincolnshire,2017,11082,11294
+TLE1,East Yorkshire and Northern Lincolnshire,2018,10557,10820
+TLE1,East Yorkshire and Northern Lincolnshire,2019,10321,10345
+TLE1,East Yorkshire and Northern Lincolnshire,2020,10232,10500
+TLE1,East Yorkshire and Northern Lincolnshire,2021,10150,10328
+TLE1,East Yorkshire and Northern Lincolnshire,2022,10016,10154
+TLE2,North Yorkshire,2011,7658,7817
+TLE2,North Yorkshire,2012,7824,7695
+TLE2,North Yorkshire,2013,8133,8181
+TLE2,North Yorkshire,2014,8092,7982
+TLE2,North Yorkshire,2015,7954,8196
+TLE2,North Yorkshire,2016,8023,8220
+TLE2,North Yorkshire,2017,8143,8149
+TLE2,North Yorkshire,2018,7715,7957
+TLE2,North Yorkshire,2019,7739,7901
+TLE2,North Yorkshire,2020,7608,7724
+TLE2,North Yorkshire,2021,7724,7815
+TLE2,North Yorkshire,2022,7416,7699
+TLE3,South Yorkshire,2011,15274,14987
+TLE3,South Yorkshire,2012,15870,15538
+TLE3,South Yorkshire,2013,16476,16222
+TLE3,South Yorkshire,2014,16426,16205
+TLE3,South Yorkshire,2015,16419,16465
+TLE3,South Yorkshire,2016,16671,16625
+TLE3,South Yorkshire,2017,16869,16703
+TLE3,South Yorkshire,2018,16486,16297
+TLE3,South Yorkshire,2019,16064,15774
+TLE3,South Yorkshire,2020,15953,15746
+TLE3,South Yorkshire,2021,16028,15946
+TLE3,South Yorkshire,2022,15888,16042
+TLE4,West Yorkshire,2011,28733,27912
+TLE4,West Yorkshire,2012,29348,28215
+TLE4,West Yorkshire,2013,30569,29498
+TLE4,West Yorkshire,2014,30849,29808
+TLE4,West Yorkshire,2015,31566,30679
+TLE4,West Yorkshire,2016,31430,30562
+TLE4,West Yorkshire,2017,31289,30591
+TLE4,West Yorkshire,2018,30755,29940
+TLE4,West Yorkshire,2019,30246,29561
+TLE4,West Yorkshire,2020,30243,29155
+TLE4,West Yorkshire,2021,30128,29445
+TLE4,West Yorkshire,2022,29768,29214
+TLF1,Derbyshire and Nottinghamshire,2011,23071,22885
+TLF1,Derbyshire and Nottinghamshire,2012,23720,23559
+TLF1,Derbyshire and Nottinghamshire,2013,24839,24621
+TLF1,Derbyshire and Nottinghamshire,2014,24615,24613
+TLF1,Derbyshire and Nottinghamshire,2015,25022,25162
+TLF1,Derbyshire and Nottinghamshire,2016,25604,25774
+TLF1,Derbyshire and Nottinghamshire,2017,25777,25930
+TLF1,Derbyshire and Nottinghamshire,2018,24940,25090
+TLF1,Derbyshire and Nottinghamshire,2019,24322,24549
+TLF1,Derbyshire and Nottinghamshire,2020,24191,24385
+TLF1,Derbyshire and Nottinghamshire,2021,24220,24636
+TLF1,Derbyshire and Nottinghamshire,2022,23906,24320
+TLF2,"Leicestershire, Rutland and Northamptonshire",2011,20250,20027
+TLF2,"Leicestershire, Rutland and Northamptonshire",2012,20646,20742
+TLF2,"Leicestershire, Rutland and Northamptonshire",2013,21543,21496
+TLF2,"Leicestershire, Rutland and Northamptonshire",2014,21442,21519
+TLF2,"Leicestershire, Rutland and Northamptonshire",2015,21507,22195
+TLF2,"Leicestershire, Rutland and Northamptonshire",2016,22067,22787
+TLF2,"Leicestershire, Rutland and Northamptonshire",2017,22099,22695
+TLF2,"Leicestershire, Rutland and Northamptonshire",2018,21471,22326
+TLF2,"Leicestershire, Rutland and Northamptonshire",2019,20975,21859
+TLF2,"Leicestershire, Rutland and Northamptonshire",2020,21383,22018
+TLF2,"Leicestershire, Rutland and Northamptonshire",2021,21784,22013
+TLF2,"Leicestershire, Rutland and Northamptonshire",2022,21113,21680
+TLF3,Lincolnshire,2011,6793,7189
+TLF3,Lincolnshire,2012,6987,7331
+TLF3,Lincolnshire,2013,7567,7965
+TLF3,Lincolnshire,2014,7448,7812
+TLF3,Lincolnshire,2015,7803,8056
+TLF3,Lincolnshire,2016,7958,8188
+TLF3,Lincolnshire,2017,7944,8139
+TLF3,Lincolnshire,2018,7679,7789
+TLF3,Lincolnshire,2019,7660,7952
+TLF3,Lincolnshire,2020,7711,7793
+TLF3,Lincolnshire,2021,7783,7844
+TLF3,Lincolnshire,2022,7387,7703
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2011,13340,13317
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2012,13969,13919
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2013,14189,14130
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2014,14025,14114
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2015,14024,14496
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2016,14453,14964
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2017,14522,14974
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2018,14386,14772
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2019,13722,14385
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2020,13652,14362
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2021,13913,14427
+TLG1,"Herefordshire, Worcestershire and Warwickshire",2022,13618,14292
+TLG2,Shropshire and Staffordshire,2011,16626,16378
+TLG2,Shropshire and Staffordshire,2012,17194,17247
+TLG2,Shropshire and Staffordshire,2013,18093,17908
+TLG2,Shropshire and Staffordshire,2014,17648,17499
+TLG2,Shropshire and Staffordshire,2015,17724,17720
+TLG2,Shropshire and Staffordshire,2016,17912,18268
+TLG2,Shropshire and Staffordshire,2017,17904,18166
+TLG2,Shropshire and Staffordshire,2018,17589,18091
+TLG2,Shropshire and Staffordshire,2019,17250,17835
+TLG2,Shropshire and Staffordshire,2020,16828,17290
+TLG2,Shropshire and Staffordshire,2021,17080,17733
+TLG2,Shropshire and Staffordshire,2022,16988,17533
+TLG3,West Midlands,2011,36552,35116
+TLG3,West Midlands,2012,37494,36059
+TLG3,West Midlands,2013,39434,37847
+TLG3,West Midlands,2014,39379,37788
+TLG3,West Midlands,2015,39435,38326
+TLG3,West Midlands,2016,40720,40080
+TLG3,West Midlands,2017,41093,40212
+TLG3,West Midlands,2018,40459,39431
+TLG3,West Midlands,2019,39800,38550
+TLG3,West Midlands,2020,39240,37684
+TLG3,West Midlands,2021,39827,38325
+TLG3,West Midlands,2022,39469,38045
+TLH1,East Anglia,2011,24893,24753
+TLH1,East Anglia,2012,26005,26083
+TLH1,East Anglia,2013,27205,27182
+TLH1,East Anglia,2014,27340,27078
+TLH1,East Anglia,2015,27656,27482
+TLH1,East Anglia,2016,28171,28252
+TLH1,East Anglia,2017,28879,28580
+TLH1,East Anglia,2018,28186,27746
+TLH1,East Anglia,2019,27474,26954
+TLH1,East Anglia,2020,27407,26913
+TLH1,East Anglia,2021,27902,27017
+TLH1,East Anglia,2022,26547,26476
+TLH2,Bedfordshire and Hertfordshire,2011,21584,21181
+TLH2,Bedfordshire and Hertfordshire,2012,21927,21970
+TLH2,Bedfordshire and Hertfordshire,2013,23371,23185
+TLH2,Bedfordshire and Hertfordshire,2014,23032,22986
+TLH2,Bedfordshire and Hertfordshire,2015,23300,23650
+TLH2,Bedfordshire and Hertfordshire,2016,24111,24201
+TLH2,Bedfordshire and Hertfordshire,2017,24004,23894
+TLH2,Bedfordshire and Hertfordshire,2018,23340,23360
+TLH2,Bedfordshire and Hertfordshire,2019,23493,23216
+TLH2,Bedfordshire and Hertfordshire,2020,23351,22917
+TLH2,Bedfordshire and Hertfordshire,2021,23875,23308
+TLH2,Bedfordshire and Hertfordshire,2022,23406,23131
+TLH3,Essex,2011,19333,19238
+TLH3,Essex,2012,19777,19900
+TLH3,Essex,2013,20892,20600
+TLH3,Essex,2014,20688,20750
+TLH3,Essex,2015,20949,21255
+TLH3,Essex,2016,21079,21572
+TLH3,Essex,2017,21326,21735
+TLH3,Essex,2018,21083,21382
+TLH3,Essex,2019,20820,21361
+TLH3,Essex,2020,20999,21256
+TLH3,Essex,2021,21329,21575
+TLH3,Essex,2022,21055,21736
+TLI3,Inner London - West,2011,15681,8115
+TLI3,Inner London - West,2012,16165,8377
+TLI3,Inner London - West,2013,15980,8423
+TLI3,Inner London - West,2014,16315,8543
+TLI3,Inner London - West,2015,16679,8633
+TLI3,Inner London - West,2016,16769,8558
+TLI3,Inner London - West,2017,16407,8345
+TLI3,Inner London - West,2018,15541,8059
+TLI3,Inner London - West,2019,14841,7681
+TLI3,Inner London - West,2020,14734,7556
+TLI3,Inner London - West,2021,14608,7579
+TLI3,Inner London - West,2022,14314,7317
+TLI4,Inner London - East,2011,34861,25109
+TLI4,Inner London - East,2012,35750,26012
+TLI4,Inner London - East,2013,36692,27173
+TLI4,Inner London - East,2014,36270,26587
+TLI4,Inner London - East,2015,37344,27050
+TLI4,Inner London - East,2016,37749,27066
+TLI4,Inner London - East,2017,37558,26658
+TLI4,Inner London - East,2018,37171,25853
+TLI4,Inner London - East,2019,36096,25134
+TLI4,Inner London - East,2020,35957,24554
+TLI4,Inner London - East,2021,36132,24172
+TLI4,Inner London - East,2022,35266,23934
+TLI5,Outer London - East and North East,2011,24625,23423
+TLI5,Outer London - East and North East,2012,26174,24828
+TLI5,Outer London - East and North East,2013,27236,25886
+TLI5,Outer London - East and North East,2014,27365,25620
+TLI5,Outer London - East and North East,2015,27855,26310
+TLI5,Outer London - East and North East,2016,28590,26606
+TLI5,Outer London - East and North East,2017,29166,26792
+TLI5,Outer London - East and North East,2018,28754,26046
+TLI5,Outer London - East and North East,2019,28219,25100
+TLI5,Outer London - East and North East,2020,28841,25441
+TLI5,Outer London - East and North East,2021,29737,25587
+TLI5,Outer London - East and North East,2022,29241,25083
+TLI6,Outer London - South,2011,15825,13896
+TLI6,Outer London - South,2012,16810,15113
+TLI6,Outer London - South,2013,17601,15741
+TLI6,Outer London - South,2014,17546,15640
+TLI6,Outer London - South,2015,17913,16077
+TLI6,Outer London - South,2016,18396,16061
+TLI6,Outer London - South,2017,18577,15944
+TLI6,Outer London - South,2018,18054,15462
+TLI6,Outer London - South,2019,17769,15048
+TLI6,Outer London - South,2020,18269,15133
+TLI6,Outer London - South,2021,18487,15148
+TLI6,Outer London - South,2022,18245,14881
+TLI7,Outer London - West and North West,2011,27279,23114
+TLI7,Outer London - West and North West,2012,28316,24030
+TLI7,Outer London - West and North West,2013,30167,25736
+TLI7,Outer London - West and North West,2014,30127,25644
+TLI7,Outer London - West and North West,2015,30992,26312
+TLI7,Outer London - West and North West,2016,31882,26373
+TLI7,Outer London - West and North West,2017,32329,26126
+TLI7,Outer London - West and North West,2018,31491,25393
+TLI7,Outer London - West and North West,2019,30882,24871
+TLI7,Outer London - West and North West,2020,30719,24323
+TLI7,Outer London - West and North West,2021,30883,24341
+TLI7,Outer London - West and North West,2022,30293,24431
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2011,27831,26462
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2012,29075,27546
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2013,30341,29016
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2014,30082,28633
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2015,30763,29515
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2016,31319,30322
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2017,31122,29902
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2018,30274,29134
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2019,29477,28421
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2020,29407,28383
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2021,29768,28869
+TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",2022,28548,28654
+TLJ2,"Surrey, East and West Sussex",2011,28895,28093
+TLJ2,"Surrey, East and West Sussex",2012,30116,29341
+TLJ2,"Surrey, East and West Sussex",2013,31075,30354
+TLJ2,"Surrey, East and West Sussex",2014,30633,30152
+TLJ2,"Surrey, East and West Sussex",2015,31482,30870
+TLJ2,"Surrey, East and West Sussex",2016,32018,31526
+TLJ2,"Surrey, East and West Sussex",2017,32176,31409
+TLJ2,"Surrey, East and West Sussex",2018,31118,30230
+TLJ2,"Surrey, East and West Sussex",2019,30496,29849
+TLJ2,"Surrey, East and West Sussex",2020,30627,29674
+TLJ2,"Surrey, East and West Sussex",2021,30578,29807
+TLJ2,"Surrey, East and West Sussex",2022,29474,29213
+TLJ3,Hampshire and Isle of Wight,2011,20530,20100
+TLJ3,Hampshire and Isle of Wight,2012,20813,20774
+TLJ3,Hampshire and Isle of Wight,2013,21762,21460
+TLJ3,Hampshire and Isle of Wight,2014,21623,21318
+TLJ3,Hampshire and Isle of Wight,2015,22061,21889
+TLJ3,Hampshire and Isle of Wight,2016,22802,22570
+TLJ3,Hampshire and Isle of Wight,2017,22906,22536
+TLJ3,Hampshire and Isle of Wight,2018,22169,21887
+TLJ3,Hampshire and Isle of Wight,2019,21614,21591
+TLJ3,Hampshire and Isle of Wight,2020,21791,21456
+TLJ3,Hampshire and Isle of Wight,2021,21623,21412
+TLJ3,Hampshire and Isle of Wight,2022,20900,20943
+TLJ4,Kent,2011,19135,19292
+TLJ4,Kent,2012,19762,19898
+TLJ4,Kent,2013,20307,20541
+TLJ4,Kent,2014,20437,20956
+TLJ4,Kent,2015,20818,21218
+TLJ4,Kent,2016,21297,21737
+TLJ4,Kent,2017,21675,22179
+TLJ4,Kent,2018,20944,21460
+TLJ4,Kent,2019,20761,21214
+TLJ4,Kent,2020,20848,21214
+TLJ4,Kent,2021,20857,21688
+TLJ4,Kent,2022,21018,21756
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2011,25653,25190
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2012,26821,26319
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2013,28350,27514
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2014,27781,27373
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2015,28435,28269
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2016,29258,28944
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2017,29521,28912
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2018,28726,28310
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2019,28259,27843
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2020,28010,27427
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2021,28495,27624
+TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",2022,27448,27111
+TLK2,Dorset and Somerset,2011,11737,12150
+TLK2,Dorset and Somerset,2012,12375,12700
+TLK2,Dorset and Somerset,2013,13049,13310
+TLK2,Dorset and Somerset,2014,13130,13284
+TLK2,Dorset and Somerset,2015,13202,13627
+TLK2,Dorset and Somerset,2016,13423,13807
+TLK2,Dorset and Somerset,2017,13608,13788
+TLK2,Dorset and Somerset,2018,13118,13279
+TLK2,Dorset and Somerset,2019,13004,13090
+TLK2,Dorset and Somerset,2020,12892,12880
+TLK2,Dorset and Somerset,2021,12906,13011
+TLK2,Dorset and Somerset,2022,12537,12777
+TLK3,Cornwall and Isles of Scilly,2011,4926,5335
+TLK3,Cornwall and Isles of Scilly,2012,5213,5517
+TLK3,Cornwall and Isles of Scilly,2013,5310,5520
+TLK3,Cornwall and Isles of Scilly,2014,5404,5707
+TLK3,Cornwall and Isles of Scilly,2015,5424,5758
+TLK3,Cornwall and Isles of Scilly,2016,5757,6097
+TLK3,Cornwall and Isles of Scilly,2017,5842,6077
+TLK3,Cornwall and Isles of Scilly,2018,5664,6004
+TLK3,Cornwall and Isles of Scilly,2019,5452,5783
+TLK3,Cornwall and Isles of Scilly,2020,5446,5727
+TLK3,Cornwall and Isles of Scilly,2021,5390,5606
+TLK3,Cornwall and Isles of Scilly,2022,5205,5491
+TLK4,Devon,2011,11016,11304
+TLK4,Devon,2012,11415,11637
+TLK4,Devon,2013,11820,11836
+TLK4,Devon,2014,11672,12130
+TLK4,Devon,2015,12123,12175
+TLK4,Devon,2016,12299,12658
+TLK4,Devon,2017,12374,12710
+TLK4,Devon,2018,12098,12198
+TLK4,Devon,2019,11790,12132
+TLK4,Devon,2020,11542,11777
+TLK4,Devon,2021,11650,11812
+TLK4,Devon,2022,11039,11579
