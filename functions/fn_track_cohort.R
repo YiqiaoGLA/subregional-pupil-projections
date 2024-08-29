@@ -1,4 +1,4 @@
-## function to create projections by tracking a cohort from a starting year through to a final year, and multiplying it by ratios
+## function to create projections by tracking a cohort from a starting year through to a final year, multiplying by a ratio for each transition from one year to the next
 ## this function is quite specific to this project. That can be ok, but a greater issue here is that the names of the nc year groups are hardcoded, meaning it can't accommodate a change in the name of the groups.
 ## which is less fine. So this function will eventually need to be improved. 
 

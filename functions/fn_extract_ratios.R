@@ -1,5 +1,8 @@
-## function to...
-## eugh! Very specific function. Assumes particular names of columns in the input dataset. Fix this. Eugh. 
+## this is a specific function, designed to solely to work with an intermediate dataset in this project. 
+## this intermediate dataset is the projected carryover ratios from one nc year to the next year. We need to extract the right series of these ratios to project a cohort through the nc years. 
+## for example, if we have the number of nc year 1 pupils in 2021, we need the projected carryover ratio from 2021 to 2022 of year 1 to year 2, then the projected carryover ratio from 2022 to 2023 for year 2 to year 3, the 2023 to 2024 ratio for year 3 to year 4, etc
+## this function is designed to extract those ratios. 
+## at present this function assumes very particular column names and input structure. Fix this to make the function more generally usable. 
 
 extract_ratios <- function(start_cohort_year, start_cohort_nc_year, end_cohort_nc_year, geog, ratio_dataset, max_year){
   

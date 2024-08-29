@@ -1,6 +1,7 @@
 
 ## Function that lags a time series
 ## again, the years must be in order
+## very simple function - takes a time series, creates a new time series from that but with the time period (years) lagged by x number of years
 
 lag_time_series <- function(ts_to_lag, 
                             years_to_lag){

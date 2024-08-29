@@ -4,11 +4,11 @@
 
 choose_central_series <- function(input_ts_1, input_ts_2, input_ts_3){
   
-  list_series <- list(input_ts_1, input_ts_2, input_ts_3)
+  list_series <- list(input_ts_1, input_ts_2, input_ts_3) # getting the input time series into the same list
   
-  series_means <- unlist(lapply(X = list_series, FUN = mean))
+  series_means <- unlist(lapply(X = list_series, FUN = mean)) # getting the means of each of the series
   
-  central_ind <- which(series_means == median(series_means))
+  central_ind <- which(series_means == median(series_means)) # choosing the series in the middle, via means, along with the line below
   
   central_series <- list_series[[central_ind]]
   

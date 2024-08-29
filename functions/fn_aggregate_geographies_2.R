@@ -1,4 +1,4 @@
-
+## function to aggregate from lower geographies to higher geographies, based on an input lookup
 
 aggregate_geographies_2 <- function(data, lookup,
                                   geog_from_data, geog_from_lookup,

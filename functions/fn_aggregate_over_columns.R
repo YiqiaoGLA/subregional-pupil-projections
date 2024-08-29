@@ -1,4 +1,4 @@
-
+## simple function, to remove selected columns from a dataset and aggregate the numeric variables
 
 aggregate_over_columns <- function(data, columns_to_remove, columns_to_sum){
   

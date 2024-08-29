@@ -1,6 +1,6 @@
 
 ## Function that takes in two time series and returns the product of those time series
-## the two input time series don't have to be fully aligning - the function will match them based on the years they have in common
+## the two input time series don't have to be fully aligning - the function will match them based on the years they have in common. The years included could be 2012 to 2017 in one series and 2014 to 2020 in another, and this function will only multiply 2014 to 2017
 ## however, the years must be in order from earliest to latest
 
 get_ts_product <- function(time_series_1, time_series_2){
