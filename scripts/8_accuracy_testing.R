@@ -214,20 +214,33 @@ both_within_byyear <- rbind(ets_within_byyear, pa_within_byyear)
   ### 6.3. making visualizations
 positions_mape <- ets_mape_byyear[order(mape), years_projected]
 
+png(file = "plots/adhoc_plots/mape_by_year.png",
+    height = 8, width = 12, units = "in", res = 600)
+
 ggplot() + 
   geom_bar(data = both_mape_byyear, stat = "identity", position = position_dodge(width = 0.7),
            aes(x = mape, y = years_projected, fill = type)) + 
   scale_y_discrete(limits = positions_mape) + 
   scale_x_continuous(labels = dollar_format(prefix = "", suffix = "%")) + 
-  scale_colour_manual(values = c(pal[1], pal[2]), aesthetics = "fill")
+  scale_colour_manual(values = c(pal[1], pal[2]), aesthetics = "fill") + 
+  ggtitle("Mean absolute percentage error, by year since input data \nand modelling method")
+
+dev.off()
 
 
 positions_within <- ets_within_byyear[order(perc_within), years_projected]
+
+png(file = "plots/adhoc_plots/perc_within_by_year.png",
+    height = 8, width = 12, units = "in", res = 600)
 
 ggplot() + 
   geom_bar(data = both_within_byyear, stat = "identity", position = position_dodge(width = 0.7),
            aes(x = perc_within, y = years_projected, fill = type)) + 
   scale_y_discrete(limits = positions_within) + 
   scale_x_continuous(labels = dollar_format(prefix = "", suffix = "%")) + 
-  scale_colour_manual(values = c(pal[1], pal[2]), aesthetics = "fill")
+  scale_colour_manual(values = c(pal[1], pal[2]), aesthetics = "fill") + 
+  ggtitle("Percentage within prediction intervals, by year since input data \nand modelling method")
+
+dev.off()
+
 

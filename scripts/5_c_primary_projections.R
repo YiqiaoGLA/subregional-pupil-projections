@@ -31,15 +31,15 @@ colnames(pupils)[colnames(pupils) == "itl221cd"] <- "itl22cd"
   ### 1.2. the projected progression ratios
 pupils_ratio <- fread("data/processed_data/pupil_numbers/pupils_projected_ratio_carrying_over.csv") # the projected carryover ratios, derived in script 3_c
 
-ratio_projection_bootstrapped <- readRDS("output_projections/initial_tenyear/full_bootstrapped_ratios_carryover.RDS") # the full bootstrapped versions of the ratios above. Important for doing the bootstrapping for this process. 
+ratio_projection_bootstrapped <- readRDS("output_projections/intermediate_outputs/full_bootstrapped_ratios_carryover.RDS") # the full bootstrapped versions of the ratios above. Important for doing the bootstrapping for this process. 
 
 
   ### 1.3. the year 1 projections
-year_1_ts_forecast <- readRDS("output_projections/initial_tenyear/year_one_forecast_ts.rds")
+year_1_ts_forecast <- readRDS("output_projections/intermediate_outputs/year_one_forecast_ts.rds")
 
 year_1_dt_forecast <- fread("output_projections/initial_tenyear/year_one_projections_2023_2032_ratio_ets.csv")
 
-year_1_bootstrapped <- readRDS("output_projections/initial_tenyear/year_one_full_bootstrapped.rds")
+year_1_bootstrapped <- readRDS("output_projections/intermediate_outputs/year_one_full_bootstrapped.rds")
 
   ### 1.4. the starting points for the tracking
 starting_points <- fread("data_resources/start_years.csv")
@@ -368,7 +368,7 @@ full_primary_projections <- full_primary_projections[, c("itl22cd", "year", "nc_
 full_primary_projections <- full_primary_projections[order(itl22cd, nc_year, year), ] # doesn't really matter, but nice to have them in a better order
 
 fwrite(x = full_primary_projections,
-       file = "output_projections/initial_tenyear/year2_year11_projections.csv")
+       file = "output_projections/initial_tenyear/year2_year11_projections_2023_2032.csv")
 
 
 

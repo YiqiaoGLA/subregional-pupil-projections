@@ -190,7 +190,7 @@ for(j in 1:length(bootstrapped_all)){
   
   nc_year_pis <- lapply(
     X = nc_year_pis,
-    FUN = function(input_dt){return(input_dt[, year := 2023:2032])} # TO REVISIT. Need to maek this automated. The specific years that are added to the data.tables. 
+    FUN = function(input_dt){return(input_dt[, year := 2023:2032])} # TO REVISIT. Need to make this automated. The specific years that are added to the data.tables. 
   )
   
   nc_year_pis_all[[j]] <- nc_year_pis
@@ -261,4 +261,5 @@ fwrite(x = projected_ratios_dt_pi,
        file = "data/processed_data/pupil_numbers/pupils_projected_ratio_carrying_over.csv")
 
 saveRDS(object = bootstrapped_all,
-        file = "output_projections/initial_tenyear/full_bootstrapped_ratios_carryover.RDS") # again, need a better place for these intermediate outputs
+        file = "output_projections/intermediate_outputs/full_bootstrapped_ratios_carryover.RDS") # again, need a better place for these intermediate outputs
+

@@ -1,6 +1,6 @@
 
 # creating 10 year projections for year 1
-# the full methodology for how this is done will be in  nearby methodology document. 
+# the full methodology for how this is done will be in a nearby methodology document. 
 # but briefly, what is happening in the script is that births are projected 10 years forwards, the ratio of births to year 1 5 years later is projected 10 years forwards, and the two series are multiplied by each other to get a projection of year 1. 
 # real births are used for the first few years of year 1 projections, and then projected births are used. 
 # and then to get uncertainty, bootstrapping is used - the same process above is repeated 1,000 times, based on 1000 slight permutations of the historical time series in question. 
@@ -335,10 +335,10 @@ fwrite(x = final_dt,
        file = "output_projections/initial_tenyear/year_one_projections_2023_2032_ratio_ets.csv")
 
 saveRDS(object = bootstrapped_year_one_intervals,
-        file = "output_projections/initial_tenyear/year_one_full_bootstrapped.rds")
+        file = "output_projections/intermediate_outputs/year_one_full_bootstrapped.rds")
 
 saveRDS(object = year_one_forecasts_tslist,
-        file = "output_projections/initial_tenyear/year_one_forecast_ts.rds") # TO DO - need a better place for these intermediate outputs
+        file = "output_projections/intermediate_outputs/year_one_forecast_ts.rds") 
 
 
 
