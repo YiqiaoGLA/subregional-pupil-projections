@@ -115,7 +115,7 @@ for(j in 1:length(unique_geogs)){
 }
 
 
-## 4. making a similar set of plots, but this time making the x-axis reception, year 1, year 2, etc, and indexing to the first year, to see if the trends are different
+## 4. making a similar set of plots, but this time making the x-axis reception, year 1, year 2, etc, and indexing to reception, to see if the trends are different
 
 unique_geogs <- pupil_data[, unique(itl22cd)]
 
@@ -189,4 +189,81 @@ for(j in 1:length(unique_geogs)){
   dev.off()
 
 }
+
+## 5. again making a similar set of plots to above, but this time indexing to year 1 rather than reception
+
+unique_geogs <- pupil_data[, unique(itl22cd)]
+
+years_to_plot <- c(2015, 2017, 2019, 2021)
+line_cols <- c("purple", "darkgreen", "orange", "darkblue")
+
+geog <- unique_geogs[j]
+
+for(j in 1:length(unique_geogs)){
+  
+  geog <- unique_geogs[j]
+  
+  #### extracting the data for the cohorts that we want. 
+  all_pupils_in_tracking <- list()
+  
+  for(i in 1:length(years_to_plot)){
+    
+    start_cohort_year <- years_to_plot[i]
+    
+    dat <- extract_cohort_data(start_cohort_year = start_cohort_year, start_cohort_nc_year = "reception", end_cohort_nc_year = "year_group_11", geog = geog, pupil_data = pupil_data)
+    
+    all_pupils_in_tracking[[i]] <- dat
+    
+  }
+  
+  #### turning them into indices
+  all_pupils_in_tracking_ind <- lapply(
+    X = all_pupils_in_tracking,
+    FUN = function(data){return(data[, pn_index := 100*(pupil_number/pupil_number[2])])}
+  )
+  
+  #### getting the y-axis limits and the plot name (which will be the name of the ITL2 geography)
+  ylim_max <- max(unlist(lapply(
+    X = all_pupils_in_tracking_ind,
+    FUN = function(dt){return(max(dt[, pn_index]))}
+  )))
+  
+  ylim_min <- min(unlist(lapply(
+    X = all_pupils_in_tracking_ind,
+    FUN = function(dt){return(min(dt[, pn_index]))}
+  )))
+  
+  plot_name <- pupil_data[itl22cd == geog, unique(itl22nm)]
+  
+  #### making the plot
+  png(file = paste0("plots/cohort_tracking_indexed_year_one/", plot_name, ".png"),
+      height = 7, width = 12, units = "in", res = 600)
+  
+  plot(x = 1:12, y = rep(1, 12), type = "n", bty = "n", axes = FALSE,
+       ylim = c(ylim_min, ylim_max), ylab = "", xlab = "")
+  
+  axis(side = 2, las = 1)
+  axis(side = 1, at = 1:12, 
+       labels = c("R", "Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6", "Year 7", "Year 8", "Year 9", "Year 10", "Year 11"),
+       las = 2)
+  
+  title(main = plot_name)
+  
+  for(i in 1:length(all_pupils_in_tracking_ind)){
+    
+    series_to_plot <- all_pupils_in_tracking_ind[[i]][, pn_index]
+    
+    lines(x = 1:12, y = series_to_plot, lwd = 3, col = line_cols[i])
+    
+  }
+  
+  legend("topright", legend = c("2015 start", "2017 start", "2019 start", "2021 start"), 
+         col = line_cols, lwd = 3, bty = "n")
+  
+  dev.off()
+  
+}
+
+
+
 
