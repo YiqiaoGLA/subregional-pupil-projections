@@ -84,7 +84,7 @@ for(i in counties_to_replace){
   
 }
 
-    #### for Northampton, we need to just change it manually to one of its constituent local authorities. Why? I can't remember - make some better notes on this.
+    #### for Northampton, we need to just change it manually to one of its constituent local authorities. Because E10000021 was split into E06000061 and E06000062 (Northamptonshire was split into North and West). The only solution I can think of code them both as Northampton before it was split, either with a new code or the pre-split code.
 
 pupil_data[new_las == "E10000021", new_las := "E06000061"]
 
@@ -106,59 +106,6 @@ fwrite(x = pupil_data,
        file = "data/processed_data/pupil_numbers/itl_pupil_numbers_1112_to_2223.csv")
 
 
-
-##### THIS IS where the main file ends. Everything below is rough code, testing code, and notes I took throughout the process. Look through, see what's worth keeping, and save it in a nicer format.
-
-
-### CHECKING TO SEE IF I CAN SAMPLE A RANDOM LA TO STAND IN FOR WHOLE COUNTY
-
-not_in_look <- unique(pupil_data$new_las)[!(unique(pupil_data$new_las) %in% unique(lookup$lad21cd))]
-
-pupil_data[new_las %in% not_in_look,]
-
-la_county_lookup <- unique(la_county_lookup)
-
-not_in_look %in% unique(la_county_lookup$cty21cd) # all there except for Northamptonshire. That one I will need to do manually. 
-
-lookup_for_missing <- la_county_lookup[cty21cd %in% not_in_look, ]
-
-## what do I need...counties missing, corresponding las, and itl regions together, so that I can see if they align. If they align, I can sample any random la within a county as a stand in for that county, and join that to the ITL. If they don't align....I have no solution yet. 
-## how do I check "aligning"? All las within a county must be within the same ITL. 
-## what would be a misalignment? A county is composed of some las that fall within one ITL, and some that fall within another ITL. In the table it would mean that, for the multiple entries of country codes, some fall under one ITL and some fall under another. 
-## I have thought of a way to do with with just code and tables. Might as well, for completeness, as well as checking the table manually 
-
-setkey(lookup, "lad21cd")
-setkey(lookup_for_missing, "lad21cd")
-
-check_for_align <- lookup[lookup_for_missing]
-
-to_keep <- c("lad21nm", "cty21nm", "itl221nm")
-
-check_for_align_a <- check_for_align[, ..to_keep] # check by eye manually
-
-
-  ## checking by code below
-
-matched_county_itl <- unique(check_for_align_a[, c("cty21nm", "itl221nm")])
-
-sum(table(matched_county_itl$cty21nm) != 1) # fantastic...no more than 1 entry per county in a unique county-itl matched table. Means there are no counties split over more than 1 ITL, which in turn means that we can select any random LA within a county to act as the stand in for that entire county, and then use that in the final LAE-ITL lookup to aggregate the pupil data.
-## the only thing this doesn't solve is Northamptonshire, but that should easily be sorted by a manual entry. 
-
-
-### END OF COUNTY-LA CHECKING THING
-
-
-### some notes below on the difficulties I had with matching. Later, scan through them and save anything important. 
-
 ### https://l-hodge.github.io/ukgeog/articles/boundary-changes.html
-### the page above tracks boundary changes in LA, and  think it accounts for every single troublemaking LA in my dataset! Which is great.
-### I can just map the new codes onto the old codes and aggregate everything. 
-### do remember, the new ones won't have a full 720 either. 
-### there is an issue with Christchurch that seems to be unfixable, given that we don't have E07 codes. Where was Christchurch pre the 2019 change?
-### pretty sure that Christchurch in Dorset, and then after 2019 Dorset loses the population of Poole and the new Bournemouth, Poole, and Christchurch gains it. And we don't have low enough geographies for each year to aggregate up. So this is just a discontinuity. These two new UTLAs won't be consistent over the period. 
-### but....it doesn't matter because they're being aggregated up into the same ITL anyway. Great!
-
-### oh no! A UTLA was split. How annoying. E10000021 was split into E06000061 and E06000062 (Northamptonshire was split into North and West). The only solution I can think of code them all as Northampton before it was split, either with a new code or the pre-split code.
-
-
+### the page above tracks boundary changes in LAs, and it accounts for every troublemaking LA in the dataset. Very useful. 
 

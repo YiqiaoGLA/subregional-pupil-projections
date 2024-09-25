@@ -530,8 +530,6 @@ for(i in 2016:2021){
   
 }
 
-
-
     #### takeaways from the London ones, in comparison to rest of UK. 
     #### (1) much, much more pronounced attrition throughout all years, including 6 to 7, in London than compared to UK as a whole. 
     #### (2) still a notable increase from reception to year 1. But looks more muted (would need more specific analysis to check), partly because the y axis axis is greater to accommodate the larger drops in later years, but also probably because some families will have moved out of London between reception and year 1.

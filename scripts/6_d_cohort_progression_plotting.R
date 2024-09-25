@@ -1,6 +1,4 @@
-## this is more a rough and experimental file. 
-## not intended for anyone to look at, but keeping it here because I mean to develop it
-
+## slightly rougher and more experimental file. Not as well commented. Don't expect to keep this as a permanent fixture of the project, at least not in its current form. 
 
 ## 0. libraries and functions
 library(data.table)

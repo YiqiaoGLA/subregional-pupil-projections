@@ -1,5 +1,5 @@
 
-## script to process school census pupil numbers data from different years into the same format, in the same dataset
+## script to process school census pupil numbers data from different years into the same format, and then put them in the same dataset
 
 ## 0. setting up libraries, functions, defaults, etc
 library(data.table)
@@ -30,9 +30,9 @@ names(pupil_data) <- gsub(".csv", "", dataset_names)
 
   ### 2.1. splitting out the two series. Before 2015/2016, each pupil numbers dataset is in a separate file for each year. From 2015/2016 onwards, the data is already nicely formatted and in one dataset. Meaning the processing steps pre- and post- 2015/2016 will need to be different in this initial stage of the processing. 
   ### most of the steps in section 2 will be about processing the pre 2015/2016 data
-processed_pupil_data <- pupil_data[[5]]
+processed_pupil_data <- pupil_data[[5]] # 2015/16 onwards. Which is a much more nicely formatted dataset than the previous years. 
 
-pupil_data <- pupil_data[1:4]
+pupil_data <- pupil_data[1:4] # the years before 2015/2016
 
 
   ### 2.2. converting column names of all to lowercase
@@ -363,22 +363,7 @@ fwrite(x = combined_data,
 
 ## decisions made during data processing
 
-  ## - in 15/16 to 22/23, there is a variable on the type of schools included. In the other datasets, there is no such variable, and there also doesn't seem to be anything in the metadata telling us what's included. 
-  ## - if there's no information on what has been included, it is probably fair to assume that everything has been included. 
-  ## - a potentially troublesome category is non-maintained state schools. Are these included in the NC year group for the earlier years when it's aggregated to local authority? 
-  ## - honestly, I think the answer is yes. As are, probably, independent schools. Because the datasets do contain data on these types of schools, and in the absence of any information on cutting these out when NC year numbers are grouped to LA, we have to assume they've been left in. 
-  ## - and, the upshot of this is that if we use the aggregated LA data, we won't be able to cut out independent schools in the projections. And we want to be able to cut out independent schools in the projections, or at least disaggregate them out, because this output is for local authorities who care more about state-funded schools (of course).
-  ## - meaning, finally, that we have to use school-level data and choose which types of schools we want. And then aggregate to local authority. 
-  ## - what affect will suppression have on this? For tomorrow....
-
-  ## agh - there is no school level for 2010/11. Maybe I'll just have to leave that year out...if all of the rest of them are there. 
-  ## there was no data for state-funded special schools in 201314 or 201415. There were a few options, but I decided to take it out for all years. (might be worth making a rough estimation later for what the values might be)
-
-  ## needed to use school-level data and aggregate up, rather than take LA data, because LA data didn't allow us to differentiate between state-funded and independent
-  ## for suppressed data, it was assumed that the value of the cell was 1. Could have also picked 1.5 or 2, or alternated between 1 and 2....to revisit. 
-  ## there was no data for state-funded special schools in 201314 or 201415. There were a few options, but we decided to take it out for all years. (might be worth making a rough estimation later for what the values might be)
-  ## no school-level data for 2010/2011, so had to leave that one out
-
-
-
-
+  ### needed to use school-level data and aggregate up, rather than take LA data, because LA data didn't allow us to differentiate between state-funded and independent
+  ### for suppressed data, it was assumed that the value of the cell was 1. Could have also picked 1.5 or 2, or alternated between 1 and 2....to revisit 
+  ### there was no data for state-funded special schools in 201314 or 201415. There were a few options, but we decided to take it out for all years. (might be worth making a rough estimation later for what the values might be)
+  ### no school-level data for 2010/2011, so had to leave that one out

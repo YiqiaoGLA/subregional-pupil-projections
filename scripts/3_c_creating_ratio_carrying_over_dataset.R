@@ -5,12 +5,9 @@
 #### But first, we need to use the historical carryover ratios to make projections of these ratios. This script first calculates all carryover ratios possible in the pupil numbers dataset, by ITL2 sub-region. 
 #### then we forecast each series. So for TLC2, we'll have 10 years or so past data of the proportion of pupils who progress from year 2 to year 3. We then project this time series 10 years into the future. 
 
-
 ## 0. libraries and functions
 library(data.table)
 library(forecast)
-library(foreach)
-library(doParallel)
 
 functions_to_read <- list.files("functions")
 
@@ -31,7 +28,6 @@ pupils <- pupils[, c("year", "itl221cd", "nc_year", "headcount")] ## narrowing d
 ## doing this by first creating an alternate dataset, with the same information aside from a different year variable. This year variable is lagged by one year. 
 ## There is also a new variable added to this dataset. This is next year's nc year. So for year 3, the corresponding entry in this new variable is year 4, as an example. 
 ## then we join the two datasets, in such a way as we end up with (for example), year 1 in 2011, year 2 in 2012, year 3 in 2013, etc...
-
 
   ### 2.1. creating duplicate dataset, containing last year's headcount for last year's students
 pupils_lagged <- data.table(
@@ -103,7 +99,7 @@ for(j in 1:length(nc_years)){ # first for loop - choosing an nc year, filtering 
   for(i in 1:length(geogs)){ # then, for this nc year, looping through the geographies and making a time series. 
                              # Meaning we will end up with a two-level list. For each nc year, a list with each entry containing the historical series for a geography. 
                              # And then all of the nc years are in one big list. 
-  
+    
     geog <- geogs[i]
   
     geog_ts <- ts(data = nc_year_data[itl22cd == geog, proportion_continuing],
@@ -134,10 +130,8 @@ for(j in 1:length(nc_years)){
     X = nc_year_tslist,
     FUN = project_with_ets,
     periods_ahead = 10,
-    model = "MNN"#, this should be MMN. I changed in to MNN to get rid of any trend in the projection, for testing on a problem. I will change it back and run it later. 
-    #damped = TRUE,
-    #phi = 0.8 # setting phi (the dampening parameter) manually leads to the flattest trends. Which is what we want. However, I'm worried that this will lead to high errors when it comes to bootstrapping. For later. 
-  ) # changed these last two from TRUE and 0.8, to see if the results look reasonable up to year 11. 
+    model = "MNN"# MNN because were are telling it to project no trend. So we're just holding this ratio series constant. 
+  )
   
   all_nc_years_projected_ratios[[j]] <- projected_nc_year_ratio
   
@@ -146,63 +140,104 @@ for(j in 1:length(nc_years)){
 names(all_nc_years_projected_ratios) <- nc_years
 
 
-  ### 4.3. calculating uncertainty for the ratios
-  ### I won't explain here the overall process for calculating uncertainty. There will be a methodology document that explain this close to wherever this script is. 
+## 5. calculating uncertainty for the projections above. We're not interesting in producing predictions for the ratios themselves, but instead for using the uncertainty here as an input into the uncertainty for the final projection, when we multiply these ratios by the starting cohort.
+## when the usual method of calculating uncertainty was used - resampling the input data, repeating the projection on each of these resamples - we ended up with very asymmetric distributions of bootstrapped projections around the central forecast. And given that a starting cohort would be multiplied by these asymmetric distributions again and again, the end resulting prediction intervals were very skewed. 
+## so now, what we are doing is taking the prediction intervals that are produced automatically by the forecast.ets method, and producing 1,000 bootstrapped samples around these. This way, we have produced a set of bootstrapped projections that are perfectly symmetrically distributed around the central forecast, but that is grounded in a real uncertainty calculation. 
+## We are assuming a normal distribution around the estimate, which is probably not a sound assumption, but I think it's good enough for this case. 
 
-    #### 4.3.1. getting the bootstrapped forecasts with parallel computing
-n_cores <- detectCores()
+  ### 5.1. getting the prediction intervals for the projection above
+all_nc_years_prediction_intervals <- list()
 
-cores_to_use <- round(0.75*n_cores)
-
-cl <- makeCluster(cores_to_use)
-
-clusterEvalQ(cl = cl, expr = c(library(forecast),
-                               library(data.table)))
-
-clusterExport(cl = cl, c("nc_years", "all_ratios_ts_list", "create_bootstrapped_forecasts", "extract_residuals_ets", 
-                         "resample_for_bootstrapping", "project_with_ets", "convert_tslist_to_dt"), envir = environment())
-
-registerDoParallel(cl)
-
-bootstrapped_all <- foreach(j = 1:length(nc_years)) %dopar% { 
+for(j in 1:length(nc_years)){
   
-  nc_year_ratios <- all_ratios_ts_list[[j]]
+  nc_year_tslist <- all_ratios_ts_list[[j]]
   
-  nc_year_ratios_bootstrapped <- create_bootstrapped_forecasts(input_ts_list = nc_year_ratios, periods_ahead = 10, model = "MNN"#, damped = TRUE, phi = 0.8
-                                                               )
+  pis_nc_year_ratio <- lapply(
+    X = nc_year_tslist,
+    FUN = prediction_intervals_with_ets,
+    periods_ahead = 10,
+    pi_level = 95,
+    model = "MNN"# MNN because were are telling it to project no trend. So we're just holding this ratio series constant. 
+  )
+  
+  all_nc_years_prediction_intervals[[j]] <- pis_nc_year_ratio
   
 }
 
-names(bootstrapped_all) <- names(all_ratios_ts_list)
+names(all_nc_years_prediction_intervals) <- nc_years
 
 
-    #### 4.3.2. extracting the prediction intervals from the bootstrapped forecasts (because after the bootstrapping, what we have is 1,000 different versions of the projection. To get 95% confidence intervals, we need to take the 97.5th and the 2.5th percentile for each year).
-nc_year_pis_all <- list()
+  ### 5.2. calculating the standard error from the 95% prediction intervals
+all_nc_years_standard_errors <- list()
 
-for(j in 1:length(bootstrapped_all)){
+for(i in 1:length(nc_years)){
   
-  nc_year_bootstrapped <- bootstrapped_all[[j]]
+  nc_year_pis <- all_nc_years_prediction_intervals[[i]]
   
-  nc_year_pis <- lapply(
-    X = nc_year_bootstrapped,
-    FUN = extract_bootstrapped_prediction_intervals
-  )
-  
-  nc_year_pis <- lapply(
+  nc_year_se <- lapply(
     X = nc_year_pis,
-    FUN = function(input_dt){return(input_dt[, year := 2023:2032])} # TO REVISIT. Need to make this automated. The specific years that are added to the data.tables. 
+    FUN = function(input_df){return((input_df[,1] - input_df[, 2])/3.92)} # confidence interval to standard error conversion is the difference between the upper and lower limits, divided by 3.92. Because the confidence intervals are calculated as -+1.96*standard_error. 
   )
   
-  nc_year_pis_all[[j]] <- nc_year_pis
+  all_nc_years_standard_errors[[i]] <- nc_year_se
   
 }
 
-names(nc_year_pis_all) <- names(bootstrapped_all)
+names(all_nc_years_standard_errors) <- nc_years
 
 
-## 5. getting the data into one data.table (what we have at the moment is a list of data.tables with the projections, and a list of data.tables with the uncertainty estimates)
+  ### 5.3. creating the "bootstrapped samples" from the central forecast and the standard errors
+  ### looping through each geography and each nc_year, and creating 1,000 bootstrapped versions of the projection by drawing from a normal distribution, with the central forecast as the mean and the standard error calculated above as the standard deviation
 
-  ### 5.1. getting the projections into one data.table
+min_year_out <- min(time(all_nc_years_projected_ratios[[1]][[1]])) # these are needed for the column names of the output data.table
+max_year_out <- max(time(all_nc_years_projected_ratios[[1]][[1]]))
+
+simulated_bootstraps_all <- list()
+
+for(i in 1:length(nc_years)){
+  
+  nc_year_sel <- nc_years[i] # selecting the nc year
+  
+  nc_year_all_geogs <- list()
+  
+  for(j in 1:length(geogs)){
+    
+    geog <- geogs[j] # selecting the geography
+    
+    rats <- all_nc_years_projected_ratios[[nc_year_sel]][[geog]] # extracting the ratio series for the nc year and geography specified
+    ses <- all_nc_years_standard_errors[[nc_year_sel]][[geog]] # extracting the standard error around the ratio for the nc year and geography specified
+    
+    rats <- as.numeric(rats)
+    
+    simulated_bootstraps <- mapply( # drawing the 1,000 samples of the ratio projecting
+      FUN = rnorm,
+      mean = rats,
+      sd = ses,
+      n = 1000,
+      SIMPLIFY = TRUE
+    )
+    
+    simulated_bootstraps <- data.table(simulated_bootstraps)
+  
+    names(simulated_bootstraps) <- paste0("year_", min_year_out:max_year_out)
+  
+    nc_year_all_geogs[[j]] <- simulated_bootstraps
+        
+  }
+  
+  names(nc_year_all_geogs) <- geogs
+  
+  simulated_bootstraps_all[[i]] <- nc_year_all_geogs
+  
+}
+
+names(simulated_bootstraps_all) <- nc_years
+
+bootstrapped_all <- simulated_bootstraps_all # I should fix the script so that this isn't needed - this is because "bootstrapped all" was the name of the output of the original way of getting the 1,000 bootstrapped samples of the ratio
+
+
+## 6. getting the projections into one data.table
+
 projected_ratios_dt_list <- list()
 
 for(j in 1:length(all_nc_years_projected_ratios)){
@@ -223,43 +258,58 @@ names(projected_ratios_dt_list) <- nc_years
 projected_ratios_dt <- rbindlist(projected_ratios_dt_list, idcol = "nc_year")
 
 
-  ### 5.2. getting the uncertainty estimates into one data.table
-pis_dt_list <- list()
-
-for(j in 1:length(nc_year_pis_all)){
-  
-  nc_pis <- nc_year_pis_all[[j]]
-  
-  nc_pis_dt <- rbindlist(nc_pis, idcol = "itl22cd")
-  
-  pis_dt_list[[j]] <- nc_pis_dt
-  
-}
-
-names(pis_dt_list) <- names(nc_year_pis_all)
-
-pis_dt <- rbindlist(pis_dt_list, idcol = "nc_year")
-
-
-  ### 5.3. joining the two tables
-projected_ratios_dt[, year := as.numeric(year)]
-projected_ratios_dt[, projected_proportion_continuing := as.numeric(projected_proportion_continuing)]
-
+## 7. writing the final output
 
 projected_ratios_dt <- projected_ratios_dt[order(nc_year, itl22cd, year), ]
-pis_dt <- pis_dt[order(nc_year, itl22cd, year), ]
+projected_ratios_dt <- projected_ratios_dt[, c("year", "itl22cd", "nc_year", "projected_proportion_continuing")]
 
-
-projected_ratios_dt_pi <- pis_dt[projected_ratios_dt, on = c(nc_year = "nc_year", itl22cd = "itl22cd", year = "year")]
-
-
-## 6. writing the final output
-
-projected_ratios_dt_pi <- projected_ratios_dt_pi[, c("year", "itl22cd", "nc_year", "projected_proportion_continuing", "upper_pi", "lower_pi")]
-
-fwrite(x = projected_ratios_dt_pi,
+fwrite(x = projected_ratios_dt,
        file = "data/processed_data/pupil_numbers/pupils_projected_ratio_carrying_over.csv")
 
 saveRDS(object = bootstrapped_all,
-        file = "output_projections/intermediate_outputs/full_bootstrapped_ratios_carryover.RDS") # again, need a better place for these intermediate outputs
+        file = "output_projections/intermediate_outputs/full_bootstrapped_ratios_carryover.RDS")
+
+
+
+## SOMETHING TO CHECK
+
+## I am still a little unsure about whether I need to make a correction for standard deviation. 
+## One way to test is to calculate prediction intervals for the ratios by the method of taking percentiles of the bootstrapped samples I've created. 
+## If I was right in using the standard error as the input into rnorm, then intervals produced using this method should be very similar to the intervals created by using what the forecast.ets method automatically produces. 
+## yes, I was write to use standard error as the input for standard deviation, without any further corrections of modifications. I'm leaving this bit of code in here now, in case I need to justify myself later. 
+
+j <- 10
+
+nc_year <- nc_years[j]
+
+par(mfrow = c(4, 9))
+par(mai = c(0.1, 0.1, 0.1, 0.1))
+
+for(i in 1:length(geogs)){
+  
+  geog <- geogs[i]
+  
+  from_function_pis <- all_nc_years_prediction_intervals[[nc_year]][[geog]]
+  
+  from_bootstraps <- bootstrapped_all[[nc_year]][[geog]]
+  from_bootstraps_pis <- extract_bootstrapped_prediction_intervals(from_bootstraps)
+  
+  ylim_min <- min(c(min(from_function_pis), min(from_bootstraps_pis)))
+  
+  ylim_max <- max(c(max(from_function_pis), max(from_bootstraps_pis)))
+  
+  
+  plot(x = 2023:2032, y = rep(1, 10), type = "n", bty = "n", las = 3, ylab = "n", xlab = "n", yaxt = "n", xaxt = "n",
+       ylim = c(ylim_min, ylim_max))
+  
+  lines(x = 2023:2032, y = unlist(from_function_pis[, 1]), lwd = 3, col = "blue")
+  lines(x = 2023:2032, y = unlist(from_function_pis[, 2]), lwd = 3, col = "blue")
+  
+  lines(x = 2023:2032, y = unlist(from_bootstraps_pis[, 1]), lwd = 3, col = "red")
+  lines(x = 2023:2032, y = unlist(from_bootstraps_pis[, 2]), lwd = 3, col = "red")
+  
+}
+
+par(mfrow = c(1, 1))
+
 

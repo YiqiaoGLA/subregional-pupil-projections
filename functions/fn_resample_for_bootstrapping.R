@@ -14,7 +14,7 @@ resample_for_bootstrapping <- function(input_vector, n_resamples){
     
     resample <- sample(x = input_vector, size = n, replace = TRUE)
     
-    resample <- abs(resample)*sign(runif(length(resample), -1, 1)) # NOTE - EXPERIMENTAL LINE! TO FORCE THE BOOTSTRAPPING TO BE SYMMETRIC
+    #resample <- abs(resample)*sign(runif(length(resample), -1, 1)) # NOTE - EXPERIMENTAL LINE! TO FORCE THE BOOTSTRAPPING TO BE SYMMETRIC
     
     output_list[[i]] <- resample
     

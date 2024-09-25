@@ -9,7 +9,7 @@ library(data.table)
 ## 1. reading in the datasets
 
   ### 1.1. reading in projections, adding the ITL names (WHY did I not do this in the original files for creating these datasets)
-projections <- fread("output_projections/initial_tenyear/year2_year11_projections.csv")
+projections <- fread("output_projections/initial_tenyear/year2_year11_projections_2023_2032.csv")
 
 itl_code_name_lookup <- fread("lookups/itl_code_name_lookup.csv")
 
@@ -71,7 +71,6 @@ for(nc_year_select in nc_year_vec){
   par(mfrow = c(4, 9))
   par(mar = c(2, 3.25, 1, 0.2))
   
-  geog <- "TLE3"
   for(geog in unique_geogs){
     
     #### extracting the name of the itl
@@ -102,7 +101,7 @@ for(nc_year_select in nc_year_vec){
             col = polygon_colour, border = NA)
 
     lines(x = 2023: 2032, y = projections_nc[itl22cd == geog & year %in% 2023:2032, mean_projection],
-          col = "red", lwd = 3)
+          col = "red", lwd = 0.5)
     
     title(main = geog_name, cex.main = 0.65)
     
@@ -114,6 +113,7 @@ for(nc_year_select in nc_year_vec){
   
   legend("topright", legend = c("Headcount", "Projected headcount"),
          col = c(real_line_col, projection_line_col),
+         lwd = c(3, 3),
          cex = 0.75)
   
   dev.off()
@@ -122,6 +122,5 @@ for(nc_year_select in nc_year_vec){
   
   
 }
-
 
 

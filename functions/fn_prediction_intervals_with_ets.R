@@ -18,7 +18,7 @@ prediction_intervals_with_ets <- function(input_ts,
     lower = forecast_from_ets$lower
   )
   
-  colnames(pis) <- paste0(colnames, "_", pi_level) # renaming the columns 
+  colnames(pis) <- paste0(colnames(pis), "_", pi_level) # renaming the columns 
   
   return(pis)
   
