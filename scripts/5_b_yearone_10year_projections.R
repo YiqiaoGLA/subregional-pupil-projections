@@ -9,6 +9,8 @@
 
 ## 0. libraries and functions
 
+source("scripts/0_inputs.R")
+
 library(data.table)
 library(forecast)
 
@@ -22,21 +24,26 @@ lapply(
 ## 1. reading in data, any small cleaning tasks, and extracting vector of unique geographies
 
 ### 1.1. reading in combined lagged births and reception, and creating the ratio
+last_useful_year <- max_year - 1
+
+paste0("data/processed_data/combined/births_year_1_lag5_", last_useful_year, ".csv")
+
 births_year_one <- fread("data/processed_data/combined/births_year_1_lag5.csv")
 
 births_year_one[, ratio := headcount/annual_births_lag5]
 
 
 ### 1.2. reading in births, creating year variable (TO DO - which really should be in an earlier script), creating lagged year variable narrowing down to desired years, and getting rid of forward slashes in the name 
-births <- fread("data/processed_data/births/itl_births_92_to_23.csv") # TO DO - file name shouldn't be date specific
+births_filename <- paste0("data/processed_data/births/itl_births_92_to_", substr(max_year, 3, 4), ".csv")
+
+births <- fread(births_filename) # TO DO - file name shouldn't be date specific
 
 births[, year := (tstrsplit(date, "-", fixed = TRUE)[1])]
 births[, year := as.numeric(year)]
 
 births[, year_lag_5 := year + 5]
 
-births <- births[year > 2010 & year < 2023, ] # TO DO - need to change this so that it's automated
-
+births <- births[year > 2010 & year < max_year, ] # TO NOTE - keeping 2010, same as in reception script
 births[, gss_name := gsub("/", "&", gss_name, fixed = TRUE)] # need to change name of one itl because it has a slash in it
 
 ### 1.3. extracting vector of unique geographies
@@ -331,14 +338,27 @@ final_dt <- final_dt[, c("year", "itl22cd", "mean_projection", "upper_pi", "lowe
 
 
 ## 10. saving the outputs
+output_filename <- paste0("output_projections/initial_tenyear/year_one_", max_year, "_", max_year + 9, "_ratio_ets.csv")
+
 fwrite(x = final_dt,
-       file = "output_projections/initial_tenyear/year_one_projections_2023_2032_ratio_ets.csv")
+       file = output_filename)
+
+
+bootstraped_output_filename <- paste0("output_projections/intermediate_outputs/year_one_full_bootstrapped_", max_year, "_", max_year + 9, ".rds")
 
 saveRDS(object = bootstrapped_year_one_intervals,
-        file = "output_projections/intermediate_outputs/year_one_full_bootstrapped.rds")
+        file = bootstraped_output_filename)
+
+
+ts_output_filename <- paste0("output_projections/intermediate_outputs/year_one_forecast_ts_", max_year, "_", max_year + 9, ".rds")
 
 saveRDS(object = year_one_forecasts_tslist,
-        file = "output_projections/intermediate_outputs/year_one_forecast_ts.rds") 
+        file = ts_output_filename) 
 
+
+rm(list = ls())
+gc()
+gc()
+gc()
 
 

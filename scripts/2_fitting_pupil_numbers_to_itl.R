@@ -4,13 +4,17 @@
 
 library(data.table)
 
+source("scripts/0_inputs.R")
+
 source("functions/fn_convert_geographies_to_latest.R")
 source("functions/fn_aggregate_geographies_2.R")
 
 
 ## 1. reading in the la level pupil data
 
-pupil_data <- fread("data/processed_data/pupil_numbers/pupil_numbers_1112_to_2223.csv")
+input_filename <- paste0("data/processed_data/pupil_numbers/pupil_numbers_1112_to_", final_school_period, ".csv")
+
+pupil_data <- fread(input_filename)
 
 
 ## 2. getting rid of other la identifiers (because it will mess up the aggregation later. We need only one column that uniquely identifies local authorities)
@@ -20,33 +24,8 @@ pupil_data <- pupil_data[, -c("old_la_code", "la_name")]
 
 ## 3. fitting all LAs in the dataset to 2021 LA boundaries (in some of the older datasets, e.g. 2011/2012, the local authority codes are older ones, before various mergings and splitting and renamings. This section matches all of those to 2021 codes)
 
-  ### 3.1. creating the lookup
-old_las <- c("E06000028",
-             "E06000029",
-             "E06000048",
-             "E06000061",
-             "E06000062",
-             "E08000020",
-             "E10000002",
-             "E10000009",
-             "E10000021")
-
-
-new_las <- c("E06000058",
-             "E06000058",
-             "E06000057",
-             "E10000021",
-             "E10000021",
-             "E08000037",
-             "E06000060",
-             "E06000059",
-             "E10000021")
-
-
-new_old_la_lookup <- data.table(
-  old_las = old_las,
-  new_las = new_las
-)
+  ### 3.1. reading in the lookup
+new_old_la_lookup <- fread("lookups/old_new_las_lookup.csv")
 
 
   ### 3.2. aggregating to new LAs
@@ -102,9 +81,16 @@ pupil_data <- aggregate_geographies_2(
 
 
   ## 5. saving the final file
-fwrite(x = pupil_data,
-       file = "data/processed_data/pupil_numbers/itl_pupil_numbers_1112_to_2223.csv")
+output_filename <- paste0("data/processed_data/pupil_numbers/itl_pupil_numbers_1112_to_", final_school_period, ".csv")
 
+fwrite(x = pupil_data,
+       file = output_filename)
+
+
+rm(list = ls())
+gc()
+gc()
+gc()
 
 ### https://l-hodge.github.io/ukgeog/articles/boundary-changes.html
 ### the page above tracks boundary changes in LAs, and it accounts for every troublemaking LA in the dataset. Very useful. 

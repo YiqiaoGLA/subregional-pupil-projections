@@ -9,6 +9,8 @@
 library(data.table)
 library(forecast)
 
+source("scripts/0_inputs.R")
+
 functions_to_read <- list.files("functions")
 
 lapply(
@@ -17,8 +19,11 @@ lapply(
 )
 
 
+
 ## 1. reading in data, small cleaning tasks
-pupils <- fread("data/processed_data/pupil_numbers/itl_pupil_numbers_1112_to_2223.csv")
+pupils_input_filename <- paste0("data/processed_data/pupil_numbers/itl_pupil_numbers_1112_to_", final_school_period, ".csv")
+
+pupils <- fread(pupils_input_filename)
 
 pupils[, year := as.numeric(substr(time_period, 1, 4))] ## creating the year variable
 
@@ -69,8 +74,10 @@ colnames(pupils)[colnames(pupils) == "next_nc_year"] <- "nc_year"
 colnames(pupils)[colnames(pupils) == "itl221cd"] <- "itl22cd"
 colnames(pupils)[colnames(pupils) == "year_lag1"] <- "year"
 
+output_ratio_filename <- paste0("data/processed_data/pupil_numbers/pupils_ratio_carrying_over_", final_school_period, ".csv")
+
 fwrite(x = pupils,
-       file = "data/processed_data/pupil_numbers/pupils_ratio_carrying_over.csv")
+       file = output_ratio_filename)
 
 
 ## 4. projecting forwards the ratios for each of the years
@@ -263,12 +270,21 @@ projected_ratios_dt <- rbindlist(projected_ratios_dt_list, idcol = "nc_year")
 projected_ratios_dt <- projected_ratios_dt[order(nc_year, itl22cd, year), ]
 projected_ratios_dt <- projected_ratios_dt[, c("year", "itl22cd", "nc_year", "projected_proportion_continuing")]
 
+projections_output_filename <- paste0("data/processed_data/pupil_numbers/pupils_projected_ratio_carrying_over_", final_school_period, ".csv")
+
 fwrite(x = projected_ratios_dt,
-       file = "data/processed_data/pupil_numbers/pupils_projected_ratio_carrying_over.csv")
+       file = projections_output_filename)
+
+bootstrapped_projections_filename <- paste0("output_projections/intermediate_outputs/full_bootstrapped_ratios_carryover_", final_school_period, ".RDS")
 
 saveRDS(object = bootstrapped_all,
-        file = "output_projections/intermediate_outputs/full_bootstrapped_ratios_carryover.RDS")
+        file = bootstrapped_projections_filename)
 
+
+rm(list = ls())
+gc()
+gc()
+gc()
 
 
 ## SOMETHING TO CHECK
@@ -276,7 +292,7 @@ saveRDS(object = bootstrapped_all,
 ## I am still a little unsure about whether I need to make a correction for standard deviation. 
 ## One way to test is to calculate prediction intervals for the ratios by the method of taking percentiles of the bootstrapped samples I've created. 
 ## If I was right in using the standard error as the input into rnorm, then intervals produced using this method should be very similar to the intervals created by using what the forecast.ets method automatically produces. 
-## yes, I was write to use standard error as the input for standard deviation, without any further corrections of modifications. I'm leaving this bit of code in here now, in case I need to justify myself later. 
+## yes, I was right to use standard error as the input for standard deviation, without any further corrections of modifications. I'm leaving this bit of code in here now, in case I need to justify myself later. 
 
 j <- 10
 

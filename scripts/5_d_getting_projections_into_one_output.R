@@ -2,11 +2,13 @@
 ### This short script combines the three output files from those scripts into one output file, and adds several new columns to make the output more user-friendly
 
 ### 0. libraries, functions, inputs
+source("scripts/0_inputs.R")
+
 library(data.table)
 
-start_proj_year <- 2023 # this is the sort of thing I'll have to have running throughout the scripts to make it all automated
+start_proj_year <- max_year # because I first wrote this script defining the objects start_proj_year and end_proj_year, and only after that created 0_inputs. 
 
-end_proj_year <- 2032
+end_proj_year <- max_output_year
 
 
 ### 1. reading in the input data
@@ -68,4 +70,8 @@ fwrite(x = full_dataset,
        file = output_filepath)
 
 
+rm(list = ls())
+gc()
+gc()
+gc()
 

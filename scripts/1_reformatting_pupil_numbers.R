@@ -1,8 +1,11 @@
 
 ## script to process school census pupil numbers data from different years into the same format, and then put them in the same dataset
 
+
 ## 0. setting up libraries, functions, defaults, etc
 library(data.table)
+
+source("scripts/0_inputs.R")
 
 functions_to_read <- list.files("functions")
 
@@ -13,7 +16,8 @@ lapply(
 
 
 ## 1. reading in data
-dataset_names <- list("1112_ncy.csv", "1213_ncy.csv", "1314_ncy.csv", "1415_ncy.csv", "1516_2223_ncy.csv")
+dataset_names <- list("1112_ncy.csv", "1213_ncy.csv", "1314_ncy.csv", "1415_ncy.csv", post_16_school_census_filename)
+
 
 dir <- "data/raw_data/pupil_numbers/"
 
@@ -356,10 +360,16 @@ combined_data <-
 
 ## 3. writing the dataset
 
+output_filename <- paste0("data/processed_data/pupil_numbers/pupil_numbers_1112_to_", final_school_period, ".csv")
+
 fwrite(x = combined_data,
-       file = "data/processed_data/pupil_numbers/pupil_numbers_1212_to_2223.csv") # TO FIX - naming needs to be automated
+       file = output_filename)
 
 
+rm(list = ls())
+gc()
+gc()
+gc()
 
 ## decisions made during data processing
 

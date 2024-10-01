@@ -6,10 +6,13 @@
 
 library(data.table)
 
+source("scripts/0_inputs.R")
+
 ## 1. reading in data
 
 births <- fread("data/raw_data/births/actual_and_predicted_births.csv")
 
+births <- fread("https://data.london.gov.uk/download/modelled-estimates-of-recent-births/9698d0b1-663c-4594-8687-67469ce07e6d/actual_and_predicted_births.csv")
 
 ## 2. cleaning the dataset, for our particular requirements
 
@@ -37,9 +40,25 @@ to_remove <- c("geography", "sex", # because all entries for geography are now I
 
 births <- births[, -..to_remove]
 
+  ### 2.4. filtering out anything past the end year we specified in inputs
+
+years <- tstrsplit(x = births$date, split = "-", fixed = TRUE)[1] 
+years <- as.numeric(unlist(years))
+
+years_to_keep <- years <= max_year
+
+births <- births[years_to_keep, ]
 
 ## 3. writing the dataset
 
+output_filename <- paste0("data/processed_data/births/itl_births_92_to_", substr(max_year, 3, 4), ".csv")
+
 fwrite(x = births,
-       file = "data/processed_data/births/itl_births_92_to_23.csv") ## TO REVISIT - need to automate this 
+       file = output_filename) 
+
+
+rm(list = ls())
+gc()
+gc()
+gc()
 

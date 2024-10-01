@@ -5,8 +5,9 @@
 # real births are used for the first few years of reception projections, and then projected births are used. 
 # and then to get uncertainty, bootstrapping is used - the same process above is repeated 1,000 times, based on 1000 slight permutations of the historical time series in question. 
 
-
 ## 0. libraries and functions
+
+source("scripts/0_inputs.R")
 
 library(data.table)
 library(forecast)
@@ -21,20 +22,26 @@ lapply(
 ## 1. reading in data, doing a few small cleaning tasks, and extracting vector of unique geographies
 
   ### 1.1. reading in combined lagged births and reception, and creating the ratio
-births_reception <- fread("data/processed_data/combined/births_reception_lag4.csv")
+
+last_useful_year <- max_year - 1
+births_reception_filename <- paste0("data/processed_data/combined/births_reception_lag4_", last_useful_year, ".csv")
+
+births_reception <- fread(births_reception_filename)
 
 births_reception[, ratio := headcount/annual_births_lag4]
 
 
   ### 1.2. reading in births, creating year variable (TO DO - which really should be in an earlier script), creating lagged year variable narrowing down to desired years, and getting rid of forward slashes in the name 
-births <- fread("data/processed_data/births/itl_births_92_to_23.csv") # TO DO - file name shouldn't be date specific
+births_filename <- paste0("data/processed_data/births/itl_births_92_to_", substr(max_year, 3, 4), ".csv")
+
+births <- fread(births_filename) # TO DO - file name shouldn't be date specific
 
 births[, year := (tstrsplit(date, "-", fixed = TRUE)[1])]
 births[, year := as.numeric(year)]
 
 births[, year_lag_4 := year + 4]
 
-births <- births[year > 2010 & year < 2023, ] # TO DO - need to change this so that it's automated
+births <- births[year > 2010 & year < max_year, ] # NOTE - keeping in 2010 and not updating, meaning the time series for births will get longer for each year. Fine for now, and not going to make much of a difference, but this is something we might like to revisit later. 
 
 births[, gss_name := gsub("/", "&", gss_name, fixed = TRUE)] # need to change name of one itl because it has a slash in it
 
@@ -327,8 +334,13 @@ final_dt <- final_dt[, c("year", "itl22cd", "mean_projection", "upper_pi", "lowe
 
 
 ## 10. saving the outputs
+output_filename <- paste0("output_projections/initial_tenyear/reception_projections_", max_year, "_", max_year + 9, "_ratio_ets.csv")
+
 fwrite(x = final_dt,
-       file = "output_projections/initial_tenyear/reception_projections_2023_2032_ratio_ets.csv")
+       file = output_filename)
 
 
-
+rm(list = ls())
+gc()
+gc()
+gc()

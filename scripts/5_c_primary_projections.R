@@ -5,6 +5,8 @@
 
 ## 0. libraries and functions
 
+source("scripts/0_inputs.R")
+
 library(data.table)
 library(parallel)
 library(doParallel)
@@ -20,7 +22,9 @@ lapply(
 ## 1. reading in and cleaning the data
 
   ### 1.1. the pupils dataset
-pupils <- fread("data/processed_data/pupil_numbers/itl_pupil_numbers_1112_to_2223.csv")
+pupils_filename <- paste0("data/processed_data/pupil_numbers/itl_pupil_numbers_1112_to_", final_school_period, ".csv")
+
+pupils <- fread(pupils_filename)
 
 pupils[, year := as.numeric(substr(time_period, 1, 4))] ## creating the year variable (TO DO - again, need to do this in an earlier script)
 
@@ -35,14 +39,32 @@ ratio_projection_bootstrapped <- readRDS("output_projections/intermediate_output
 
 
   ### 1.3. the year 1 projections
-year_1_ts_forecast <- readRDS("output_projections/intermediate_outputs/year_one_forecast_ts.rds")
+year_1_ts_filename <- paste0("output_projections/intermediate_outputs/year_one_forecast_ts_", max_year, "_", max_year + 9, ".rds")
+year_1_ts_forecast <- readRDS(year_1_ts_filename)
 
-year_1_dt_forecast <- fread("output_projections/initial_tenyear/year_one_projections_2023_2032_ratio_ets.csv")
 
-year_1_bootstrapped <- readRDS("output_projections/intermediate_outputs/year_one_full_bootstrapped.rds")
+year_1_dt_filename <- paste0("output_projections/initial_tenyear/year_one_", max_year, "_", max_year + 9, "_ratio_ets.csv")
+year_1_dt_forecast <- fread(year_1_dt_filename)
+
+
+year_1_bootstrapped_filename <-  paste0("output_projections/intermediate_outputs/year_one_full_bootstrapped_", max_year, "_", max_year + 9, ".rds")
+year_1_bootstrapped <- readRDS(year_1_bootstrapped_filename)
+
 
   ### 1.4. the starting points for the tracking
-starting_points <- fread("data_resources/start_years.csv")
+starting_points <- fread("data_resources/start_years.csv") # NOTE - for the time being, this will need to be done manually. Will be possible to automate through code but will take a bit of work. 
+
+year_vec <- c(max_year:(max_year + 8), rep(c(max_year - 1), 10))
+nc_year_vec <- c("year_group_1", "year_group_1", "year_group_1", "year_group_1", "year_group_1", "year_group_1", "year_group_1", "year_group_1", "year_group_1", "year_group_1",
+                 "year_group_2", "year_group_3", "year_group_4", "year_group_5", "year_group_6", "year_group_7", "year_group_8", "year_group_9", "year_group_10")
+start_year_status_vec <- c("projection", "projection", "projection", "projection", "projection", "projection", "projection", "projection", "projection",
+                           "actual", "actual", "actual", "actual", "actual", "actual", "actual", "actual", "actual", "actual")
+
+starting_points <- data.table(
+  year = year_vec,
+  nc_year = nc_year_vec,
+  start_year_status = start_year_status_vec
+)
 
 
 ## 2. doing the projections
@@ -77,7 +99,7 @@ for(j in 1:length(all_geogs)){
     
     cohort_ratios <- extract_ratios(start_cohort_year = start_cohort_year, # from the projected carry over ratio dataset, extracting the set of ratios we need to use to progress this cohort up to nc year 11
                                     start_cohort_nc_year = start_cohort_nc_year, end_cohort_nc_year = "year_group_11", 
-                                    geog = geog, ratio_dataset = pupils_ratio, max_year = 2032)
+                                    geog = geog, ratio_dataset = pupils_ratio, max_year = max_output_year)
     
     pupil_projection <- track_cohort(start_cohort_size = start_cohort_size, start_cohort_year = start_cohort_year, # applying the ratios to the starting cohort
                                      start_cohort_nc_year = start_cohort_nc_year, cohort_ratios = cohort_ratios)
@@ -129,7 +151,7 @@ end_output_test_proj <- foreach(j = 1:length(all_geogs)) %dopar% { # defining a 
     
     #### extracting the parameters - the year in question, the nc year in question, and the number of pupils in the year/nc-year combination
     start_cohort_year <- starting_points_proj[i, year]
-    max_year <- 2032
+    max_year <- max_output_year
     
     start_cohort_nc_year <- starting_points_proj[i, nc_year]
     end_cohort_nc_year <- "year_group_11"
@@ -169,7 +191,7 @@ end_output_test_proj <- foreach(j = 1:length(all_geogs)) %dopar% { # defining a 
     
 
     #### extracting the 95% prediction intervals and adding the years and nc_years
-    pupil_projection_pis <- extract_bootstrapped_prediction_intervals(bootstrapped_pupil_projection_dt, pi_level = 90)
+    pupil_projection_pis <- extract_bootstrapped_prediction_intervals(bootstrapped_pupil_projection_dt, pi_level = 95)
     
     nc_year_vec <- c("year_group_1", "year_group_2", "year_group_3", "year_group_4", "year_group_5", "year_group_6", "year_group_7", 
                      "year_group_8", "year_group_9", "year_group_10", "year_group_11", "year_group_12", "year_group_13", "year_group_14")
@@ -235,7 +257,7 @@ for(j in 1:length(all_geogs)){
     
     cohort_ratios <- extract_ratios(start_cohort_year = start_cohort_year, # from the projected carry over ratio dataset, extracting the set of ratios we need to use to progress this cohort up to nc year 11
                                     start_cohort_nc_year = start_cohort_nc_year, end_cohort_nc_year = "year_group_11", 
-                                    geog = geog, ratio_dataset = pupils_ratio, max_year = 2032) ## TO DO - hardcoded max year...need to get rid of
+                                    geog = geog, ratio_dataset = pupils_ratio, max_year = max_output_year) ## TO DO - hardcoded max year...need to get rid of
     
     pupil_projection <- track_cohort(start_cohort_size = start_cohort_size, start_cohort_year = start_cohort_year, # applying the ratios to the starting cohort
                                      start_cohort_nc_year = start_cohort_nc_year, cohort_ratios = cohort_ratios)
@@ -279,7 +301,7 @@ registerDoParallel(cl)
 
 pis_list_actual <- list()
 
-end_output_test <- foreach(j = 1:length(all_geogs)) %dopar% { # defining a list outside of the loop and then adding things iteravily from the loop doesn't work. Instead, foreach actually outputs a list with each iteration of the loop as an item in the list
+end_output_test <- foreach(j = 1:length(all_geogs)) %dopar% { # defining a list outside of the loop and then adding things iteratively from the loop doesn't work. Instead, foreach actually outputs a list with each iteration of the loop as an item in the list
   
   
   end_output <- list() ## TO BE RENAMED
@@ -290,7 +312,7 @@ end_output_test <- foreach(j = 1:length(all_geogs)) %dopar% { # defining a list 
     
     #### extracting the parameters - the year in question, the nc year in question, and the number of pupils in the year/nc-year combination
     start_cohort_year <- starting_points_actual[i, year]
-    max_year <- 2032
+    max_year <- max_output_year
     
     start_cohort_nc_year <- starting_points_actual[i, nc_year]
     end_cohort_nc_year <- "year_group_11"
@@ -312,7 +334,7 @@ end_output_test <- foreach(j = 1:length(all_geogs)) %dopar% { # defining a list 
     bootstrapped_pupil_projection_dt <- rbindlist(bootstrapped_pupil_projection)
     
     #### extracting the 95% prediction intervals and adding the years and nc_years
-    pupil_projection_pis <- extract_bootstrapped_prediction_intervals(bootstrapped_pupil_projection_dt, pi_level = 90)
+    pupil_projection_pis <- extract_bootstrapped_prediction_intervals(bootstrapped_pupil_projection_dt, pi_level = 95)
     
     nc_year_vec <- c("year_group_1", "year_group_2", "year_group_3", "year_group_4", "year_group_5", "year_group_6", "year_group_7", 
                      "year_group_8", "year_group_9", "year_group_10", "year_group_11", "year_group_12", "year_group_13", "year_group_14")
@@ -367,8 +389,13 @@ full_primary_projections <- full_primary_projections[, c("itl22cd", "year", "nc_
 
 full_primary_projections <- full_primary_projections[order(itl22cd, nc_year, year), ] # doesn't really matter, but nice to have them in a better order
 
+output_filename <- paste0("output_projections/initial_tenyear/year2_year11_projections_", max_year, "_", max_year + 9, ".csv")
+
 fwrite(x = full_primary_projections,
-       file = "output_projections/initial_tenyear/year2_year11_projections_2023_2032.csv")
+       file = output_filename)
 
 
-
+rm(list = ls())
+gc()
+gc()
+gc()

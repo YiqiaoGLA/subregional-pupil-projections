@@ -10,11 +10,19 @@
 
 library(data.table)
 
+source("scripts/0_inputs.R")
+
+
 ## 1. reading in datasets
 
-pupils <- fread("data/processed_data/pupil_numbers/itl_pupil_numbers_1112_to_2223.csv") # TO DO - need to automate this. The years cannot be in the filename here! Needs to be general. 
+pupils_filename <- paste0("data/processed_data/pupil_numbers/itl_pupil_numbers_1112_to_", final_school_period, ".csv")
 
-births <- fread("data/processed_data/births/itl_births_92_to_23.csv") # TO DO - need to automate this. The years cannot be in the filename here! Needs to be general. 
+births_filename <- paste0("data/processed_data/births/itl_births_92_to_", substr(max_year, 3, 4), ".csv")
+
+
+pupils <- fread(pupils_filename)
+
+births <- fread(births_filename)
 
 
 ## 2. simple data_processing steps - creating year variables for both datasets, and narrowing pupils down to reception & year 1 (TO DO - YEAR VARIABLES SHOULD BE CREATED EARLIER! In scripts 2 and 3a). 
@@ -36,11 +44,13 @@ year_1 <- pupils[nc_year == "year_group_1"]
 births_4 <- births
 births_5 <- births
 
+last_useful_year <- max_year - 1 # why was it this year again? Really need to check this and understand this. 
+
 births_4[, year_lag_4 := year + 4]
-births_4[year_lag_4 > 2022 | year_lag_4 < 2011, year_lag_4 := NA]
+births_4[year_lag_4 > last_useful_year | year_lag_4 < 2011, year_lag_4 := NA]
 
 births_5[, year_lag_5 := year + 5]
-births_5[year_lag_5 > 2022 | year_lag_5 < 2011, year_lag_5 := NA]
+births_5[year_lag_5 > last_useful_year | year_lag_5 < 2011, year_lag_5 := NA]
 
   ### 3.1. joining the datasets
 setkey(births_4, "gss_code", "year_lag_4")
@@ -72,11 +82,19 @@ colnames(births_year_1_joined) <- c("itl_cd", "itl_name", "year", "annual_births
 
 
 ## 5. writing the datasets
+
+output_reception_filename <- paste0("data/processed_data/combined/births_reception_lag4_", last_useful_year, ".csv")
+
 fwrite(x = births_reception_joined,
-       file = "data/processed_data/combined/births_reception_lag4.csv")
+       file = output_reception_filename)
+
+output_year_1_filename <- paste0("data/processed_data/combined/births_year_1_lag5_", last_useful_year, ".csv")
 
 fwrite(x = births_year_1_joined,
-       file = "data/processed_data/combined/births_year_1_lag5.csv")
+       file = output_year_1_filename)
 
 
-
+rm(list = ls())
+gc()
+gc()
+gc()
