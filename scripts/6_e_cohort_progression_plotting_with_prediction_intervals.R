@@ -10,12 +10,10 @@ lapply(
 library(data.table)
 
 ## 1. reading in data
-
 all_projections <- fread("output_projections/initial_tenyear/reception_year_11_projections_2023_2032.csv")
 
 
 ## 2. making the plots
-
 geogs <- all_projections[, unique(itl22cd)]
 
 for(i in 1:length(geogs)){

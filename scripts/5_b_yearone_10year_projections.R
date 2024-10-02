@@ -338,7 +338,7 @@ final_dt <- final_dt[, c("year", "itl22cd", "mean_projection", "upper_pi", "lowe
 
 
 ## 10. saving the outputs
-output_filename <- paste0("output_projections/initial_tenyear/year_one_", max_year, "_", max_year + 9, "_ratio_ets.csv")
+output_filename <- paste0("output_projections/initial_tenyear/year_one_projections", max_year, "_", max_year + 9, "_ratio_ets.csv")
 
 fwrite(x = final_dt,
        file = output_filename)
